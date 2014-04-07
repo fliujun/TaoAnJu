@@ -1,0 +1,563 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<errlog>
+<err><logtime>2014-04-03 09:21:21</logtime><source>DsConnectionDB</source><subsource>ExecSQL</subsource><callstack>方法名:Void OnError(System.Data.SqlClient.SqlException, Boolean)
+原程序或对象名:.Net SqlClient Data Provider
+状态:   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 TaoAnJu.Util.DsConnectionDB.ExecSQL(String strSQL, SqlTransaction oTrans) 位置 e:\工作\TaoAnJu\TaoAnJu\App_Code\Util\DsConnectionDB.cs:行号 491
+错误描述:'&lt;' 附近有语法错误。
+</callstack><severity>5</severity><errmessage>SQL=delete from tb_ViewInfo where int_VId=&lt;a href ="ViewInfo_List.aspx?itemid=1004&amp;vid=24"&gt;24&lt;/a&gt;</errmessage></err>
+﻿<err><logtime>2014-04-03 09:21:21</logtime><source>LogException</source><subsource>App_Code.0z8opx5r</subsource><callstack>方法名:Void LogException()
+原程序或对象名:App_Code.0z8opx5r
+状态:   在 TaoAnJu.Util.SysException.LogException() 位置 e:\工作\TaoAnJu\TaoAnJu\App_Code\Util\SysException.cs:行号 65
+   在 TaoAnJu.Util.SysException..ctor(String message, Exception inner, Int32 intSeverity, Boolean boolLogExp) 位置 e:\工作\TaoAnJu\TaoAnJu\App_Code\Util\SysException.cs:行号 60
+   在 TaoAnJu.Util.DsConnectionDB.ExecSQL(String strSQL, SqlTransaction oTrans) 位置 e:\工作\TaoAnJu\TaoAnJu\App_Code\Util\DsConnectionDB.cs:行号 498
+   在 TaoAnJu.Util.DsConnectionDB.ExecuteNonQuery(String sqlStmt) 位置 e:\工作\TaoAnJu\TaoAnJu\App_Code\Util\DsConnectionDB.cs:行号 330
+   在 admin_ViewInfo_List.GridView1_RowDeleting(Object sender, GridViewDeleteEventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 146
+错误描述:未将对象引用设置到对象的实例。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-03 09:21:24</logtime><source>DsConnectionDB</source><subsource>ExecSQL</subsource><callstack>方法名:Void OnError(System.Data.SqlClient.SqlException, Boolean)
+原程序或对象名:.Net SqlClient Data Provider
+状态:   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 TaoAnJu.Util.DsConnectionDB.ExecSQL(String strSQL, SqlTransaction oTrans) 位置 e:\工作\TaoAnJu\TaoAnJu\App_Code\Util\DsConnectionDB.cs:行号 491
+错误描述:'&lt;' 附近有语法错误。
+</callstack><severity>5</severity><errmessage>SQL=delete from tb_ViewInfo where int_VId=&lt;a href ="ViewInfo_List.aspx?itemid=1004&amp;vid=24"&gt;24&lt;/a&gt;</errmessage></err>
+﻿<err><logtime>2014-04-03 09:21:24</logtime><source>LogException</source><subsource>App_Code.0z8opx5r</subsource><callstack>方法名:Void LogException()
+原程序或对象名:App_Code.0z8opx5r
+状态:   在 TaoAnJu.Util.SysException.LogException() 位置 e:\工作\TaoAnJu\TaoAnJu\App_Code\Util\SysException.cs:行号 65
+   在 TaoAnJu.Util.SysException..ctor(String message, Exception inner, Int32 intSeverity, Boolean boolLogExp) 位置 e:\工作\TaoAnJu\TaoAnJu\App_Code\Util\SysException.cs:行号 60
+   在 TaoAnJu.Util.DsConnectionDB.ExecSQL(String strSQL, SqlTransaction oTrans) 位置 e:\工作\TaoAnJu\TaoAnJu\App_Code\Util\DsConnectionDB.cs:行号 498
+   在 TaoAnJu.Util.DsConnectionDB.ExecuteNonQuery(String sqlStmt) 位置 e:\工作\TaoAnJu\TaoAnJu\App_Code\Util\DsConnectionDB.cs:行号 330
+   在 admin_ViewInfo_List.GridView1_RowDeleting(Object sender, GridViewDeleteEventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 146
+错误描述:未将对象引用设置到对象的实例。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-03 09:21:26</logtime><source>DsConnectionDB</source><subsource>ExecSQL</subsource><callstack>方法名:Void OnError(System.Data.SqlClient.SqlException, Boolean)
+原程序或对象名:.Net SqlClient Data Provider
+状态:   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 TaoAnJu.Util.DsConnectionDB.ExecSQL(String strSQL, SqlTransaction oTrans) 位置 e:\工作\TaoAnJu\TaoAnJu\App_Code\Util\DsConnectionDB.cs:行号 491
+错误描述:'&lt;' 附近有语法错误。
+</callstack><severity>5</severity><errmessage>SQL=delete from tb_ViewInfo where int_VId=&lt;a href ="ViewInfo_List.aspx?itemid=1004&amp;vid=24"&gt;24&lt;/a&gt;</errmessage></err>
+﻿<err><logtime>2014-04-03 09:21:26</logtime><source>LogException</source><subsource>App_Code.0z8opx5r</subsource><callstack>方法名:Void LogException()
+原程序或对象名:App_Code.0z8opx5r
+状态:   在 TaoAnJu.Util.SysException.LogException() 位置 e:\工作\TaoAnJu\TaoAnJu\App_Code\Util\SysException.cs:行号 65
+   在 TaoAnJu.Util.SysException..ctor(String message, Exception inner, Int32 intSeverity, Boolean boolLogExp) 位置 e:\工作\TaoAnJu\TaoAnJu\App_Code\Util\SysException.cs:行号 60
+   在 TaoAnJu.Util.DsConnectionDB.ExecSQL(String strSQL, SqlTransaction oTrans) 位置 e:\工作\TaoAnJu\TaoAnJu\App_Code\Util\DsConnectionDB.cs:行号 498
+   在 TaoAnJu.Util.DsConnectionDB.ExecuteNonQuery(String sqlStmt) 位置 e:\工作\TaoAnJu\TaoAnJu\App_Code\Util\DsConnectionDB.cs:行号 330
+   在 admin_ViewInfo_List.GridView1_RowDeleting(Object sender, GridViewDeleteEventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 146
+错误描述:未将对象引用设置到对象的实例。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-03 09:21:29</logtime><source>DsConnectionDB</source><subsource>ExecSQL</subsource><callstack>方法名:Void OnError(System.Data.SqlClient.SqlException, Boolean)
+原程序或对象名:.Net SqlClient Data Provider
+状态:   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 TaoAnJu.Util.DsConnectionDB.ExecSQL(String strSQL, SqlTransaction oTrans) 位置 e:\工作\TaoAnJu\TaoAnJu\App_Code\Util\DsConnectionDB.cs:行号 491
+错误描述:'&lt;' 附近有语法错误。
+</callstack><severity>5</severity><errmessage>SQL=delete from tb_ViewInfo where int_VId=&lt;a href ="ViewInfo_List.aspx?itemid=1004&amp;vid=24"&gt;24&lt;/a&gt;</errmessage></err>
+﻿<err><logtime>2014-04-03 09:21:29</logtime><source>LogException</source><subsource>App_Code.0z8opx5r</subsource><callstack>方法名:Void LogException()
+原程序或对象名:App_Code.0z8opx5r
+状态:   在 TaoAnJu.Util.SysException.LogException() 位置 e:\工作\TaoAnJu\TaoAnJu\App_Code\Util\SysException.cs:行号 65
+   在 TaoAnJu.Util.SysException..ctor(String message, Exception inner, Int32 intSeverity, Boolean boolLogExp) 位置 e:\工作\TaoAnJu\TaoAnJu\App_Code\Util\SysException.cs:行号 60
+   在 TaoAnJu.Util.DsConnectionDB.ExecSQL(String strSQL, SqlTransaction oTrans) 位置 e:\工作\TaoAnJu\TaoAnJu\App_Code\Util\DsConnectionDB.cs:行号 498
+   在 TaoAnJu.Util.DsConnectionDB.ExecuteNonQuery(String sqlStmt) 位置 e:\工作\TaoAnJu\TaoAnJu\App_Code\Util\DsConnectionDB.cs:行号 330
+   在 admin_ViewInfo_List.GridView1_RowDeleting(Object sender, GridViewDeleteEventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 146
+错误描述:未将对象引用设置到对象的实例。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-03 09:21:32</logtime><source>DsConnectionDB</source><subsource>ExecSQL</subsource><callstack>方法名:Void OnError(System.Data.SqlClient.SqlException, Boolean)
+原程序或对象名:.Net SqlClient Data Provider
+状态:   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 TaoAnJu.Util.DsConnectionDB.ExecSQL(String strSQL, SqlTransaction oTrans) 位置 e:\工作\TaoAnJu\TaoAnJu\App_Code\Util\DsConnectionDB.cs:行号 491
+错误描述:'&lt;' 附近有语法错误。
+</callstack><severity>5</severity><errmessage>SQL=delete from tb_ViewInfo where int_VId=&lt;a href ="ViewInfo_List.aspx?itemid=1004&amp;vid=22"&gt;22&lt;/a&gt;</errmessage></err>
+﻿<err><logtime>2014-04-03 09:21:32</logtime><source>LogException</source><subsource>App_Code.0z8opx5r</subsource><callstack>方法名:Void LogException()
+原程序或对象名:App_Code.0z8opx5r
+状态:   在 TaoAnJu.Util.SysException.LogException() 位置 e:\工作\TaoAnJu\TaoAnJu\App_Code\Util\SysException.cs:行号 65
+   在 TaoAnJu.Util.SysException..ctor(String message, Exception inner, Int32 intSeverity, Boolean boolLogExp) 位置 e:\工作\TaoAnJu\TaoAnJu\App_Code\Util\SysException.cs:行号 60
+   在 TaoAnJu.Util.DsConnectionDB.ExecSQL(String strSQL, SqlTransaction oTrans) 位置 e:\工作\TaoAnJu\TaoAnJu\App_Code\Util\DsConnectionDB.cs:行号 498
+   在 TaoAnJu.Util.DsConnectionDB.ExecuteNonQuery(String sqlStmt) 位置 e:\工作\TaoAnJu\TaoAnJu\App_Code\Util\DsConnectionDB.cs:行号 330
+   在 admin_ViewInfo_List.GridView1_RowDeleting(Object sender, GridViewDeleteEventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 146
+错误描述:未将对象引用设置到对象的实例。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-03 09:21:34</logtime><source>DsConnectionDB</source><subsource>ExecSQL</subsource><callstack>方法名:Void OnError(System.Data.SqlClient.SqlException, Boolean)
+原程序或对象名:.Net SqlClient Data Provider
+状态:   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 TaoAnJu.Util.DsConnectionDB.ExecSQL(String strSQL, SqlTransaction oTrans) 位置 e:\工作\TaoAnJu\TaoAnJu\App_Code\Util\DsConnectionDB.cs:行号 491
+错误描述:'&lt;' 附近有语法错误。
+</callstack><severity>5</severity><errmessage>SQL=delete from tb_ViewInfo where int_VId=&lt;a href ="ViewInfo_List.aspx?itemid=1004&amp;vid=21"&gt;21&lt;/a&gt;</errmessage></err>
+﻿<err><logtime>2014-04-03 09:21:34</logtime><source>LogException</source><subsource>App_Code.0z8opx5r</subsource><callstack>方法名:Void LogException()
+原程序或对象名:App_Code.0z8opx5r
+状态:   在 TaoAnJu.Util.SysException.LogException() 位置 e:\工作\TaoAnJu\TaoAnJu\App_Code\Util\SysException.cs:行号 65
+   在 TaoAnJu.Util.SysException..ctor(String message, Exception inner, Int32 intSeverity, Boolean boolLogExp) 位置 e:\工作\TaoAnJu\TaoAnJu\App_Code\Util\SysException.cs:行号 60
+   在 TaoAnJu.Util.DsConnectionDB.ExecSQL(String strSQL, SqlTransaction oTrans) 位置 e:\工作\TaoAnJu\TaoAnJu\App_Code\Util\DsConnectionDB.cs:行号 498
+   在 TaoAnJu.Util.DsConnectionDB.ExecuteNonQuery(String sqlStmt) 位置 e:\工作\TaoAnJu\TaoAnJu\App_Code\Util\DsConnectionDB.cs:行号 330
+   在 admin_ViewInfo_List.GridView1_RowDeleting(Object sender, GridViewDeleteEventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 146
+错误描述:未将对象引用设置到对象的实例。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-03 09:21:37</logtime><source>DsConnectionDB</source><subsource>ExecSQL</subsource><callstack>方法名:Void OnError(System.Data.SqlClient.SqlException, Boolean)
+原程序或对象名:.Net SqlClient Data Provider
+状态:   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 TaoAnJu.Util.DsConnectionDB.ExecSQL(String strSQL, SqlTransaction oTrans) 位置 e:\工作\TaoAnJu\TaoAnJu\App_Code\Util\DsConnectionDB.cs:行号 491
+错误描述:'&lt;' 附近有语法错误。
+</callstack><severity>5</severity><errmessage>SQL=delete from tb_ViewInfo where int_VId=&lt;a href ="ViewInfo_List.aspx?itemid=1004&amp;vid=17"&gt;17&lt;/a&gt;</errmessage></err>
+﻿<err><logtime>2014-04-03 09:21:37</logtime><source>LogException</source><subsource>App_Code.0z8opx5r</subsource><callstack>方法名:Void LogException()
+原程序或对象名:App_Code.0z8opx5r
+状态:   在 TaoAnJu.Util.SysException.LogException() 位置 e:\工作\TaoAnJu\TaoAnJu\App_Code\Util\SysException.cs:行号 65
+   在 TaoAnJu.Util.SysException..ctor(String message, Exception inner, Int32 intSeverity, Boolean boolLogExp) 位置 e:\工作\TaoAnJu\TaoAnJu\App_Code\Util\SysException.cs:行号 60
+   在 TaoAnJu.Util.DsConnectionDB.ExecSQL(String strSQL, SqlTransaction oTrans) 位置 e:\工作\TaoAnJu\TaoAnJu\App_Code\Util\DsConnectionDB.cs:行号 498
+   在 TaoAnJu.Util.DsConnectionDB.ExecuteNonQuery(String sqlStmt) 位置 e:\工作\TaoAnJu\TaoAnJu\App_Code\Util\DsConnectionDB.cs:行号 330
+   在 admin_ViewInfo_List.GridView1_RowDeleting(Object sender, GridViewDeleteEventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 146
+错误描述:未将对象引用设置到对象的实例。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-03 09:21:39</logtime><source>DsConnectionDB</source><subsource>ExecSQL</subsource><callstack>方法名:Void OnError(System.Data.SqlClient.SqlException, Boolean)
+原程序或对象名:.Net SqlClient Data Provider
+状态:   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 TaoAnJu.Util.DsConnectionDB.ExecSQL(String strSQL, SqlTransaction oTrans) 位置 e:\工作\TaoAnJu\TaoAnJu\App_Code\Util\DsConnectionDB.cs:行号 491
+错误描述:'&lt;' 附近有语法错误。
+</callstack><severity>5</severity><errmessage>SQL=delete from tb_ViewInfo where int_VId=&lt;a href ="ViewInfo_List.aspx?itemid=1004&amp;vid=24"&gt;24&lt;/a&gt;</errmessage></err>
+﻿<err><logtime>2014-04-03 09:21:39</logtime><source>LogException</source><subsource>App_Code.0z8opx5r</subsource><callstack>方法名:Void LogException()
+原程序或对象名:App_Code.0z8opx5r
+状态:   在 TaoAnJu.Util.SysException.LogException() 位置 e:\工作\TaoAnJu\TaoAnJu\App_Code\Util\SysException.cs:行号 65
+   在 TaoAnJu.Util.SysException..ctor(String message, Exception inner, Int32 intSeverity, Boolean boolLogExp) 位置 e:\工作\TaoAnJu\TaoAnJu\App_Code\Util\SysException.cs:行号 60
+   在 TaoAnJu.Util.DsConnectionDB.ExecSQL(String strSQL, SqlTransaction oTrans) 位置 e:\工作\TaoAnJu\TaoAnJu\App_Code\Util\DsConnectionDB.cs:行号 498
+   在 TaoAnJu.Util.DsConnectionDB.ExecuteNonQuery(String sqlStmt) 位置 e:\工作\TaoAnJu\TaoAnJu\App_Code\Util\DsConnectionDB.cs:行号 330
+   在 admin_ViewInfo_List.GridView1_RowDeleting(Object sender, GridViewDeleteEventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 146
+错误描述:未将对象引用设置到对象的实例。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-03 09:21:42</logtime><source>DsConnectionDB</source><subsource>ExecSQL</subsource><callstack>方法名:Void OnError(System.Data.SqlClient.SqlException, Boolean)
+原程序或对象名:.Net SqlClient Data Provider
+状态:   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 TaoAnJu.Util.DsConnectionDB.ExecSQL(String strSQL, SqlTransaction oTrans) 位置 e:\工作\TaoAnJu\TaoAnJu\App_Code\Util\DsConnectionDB.cs:行号 491
+错误描述:'&lt;' 附近有语法错误。
+</callstack><severity>5</severity><errmessage>SQL=delete from tb_ViewInfo where int_VId=&lt;a href ="ViewInfo_List.aspx?itemid=1004&amp;vid=24"&gt;24&lt;/a&gt;</errmessage></err>
+﻿<err><logtime>2014-04-03 09:21:42</logtime><source>LogException</source><subsource>App_Code.0z8opx5r</subsource><callstack>方法名:Void LogException()
+原程序或对象名:App_Code.0z8opx5r
+状态:   在 TaoAnJu.Util.SysException.LogException() 位置 e:\工作\TaoAnJu\TaoAnJu\App_Code\Util\SysException.cs:行号 65
+   在 TaoAnJu.Util.SysException..ctor(String message, Exception inner, Int32 intSeverity, Boolean boolLogExp) 位置 e:\工作\TaoAnJu\TaoAnJu\App_Code\Util\SysException.cs:行号 60
+   在 TaoAnJu.Util.DsConnectionDB.ExecSQL(String strSQL, SqlTransaction oTrans) 位置 e:\工作\TaoAnJu\TaoAnJu\App_Code\Util\DsConnectionDB.cs:行号 498
+   在 TaoAnJu.Util.DsConnectionDB.ExecuteNonQuery(String sqlStmt) 位置 e:\工作\TaoAnJu\TaoAnJu\App_Code\Util\DsConnectionDB.cs:行号 330
+   在 admin_ViewInfo_List.GridView1_RowDeleting(Object sender, GridViewDeleteEventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 146
+错误描述:未将对象引用设置到对象的实例。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-03 09:21:48</logtime><source>DsConnectionDB</source><subsource>ExecSQL</subsource><callstack>方法名:Void OnError(System.Data.SqlClient.SqlException, Boolean)
+原程序或对象名:.Net SqlClient Data Provider
+状态:   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 TaoAnJu.Util.DsConnectionDB.ExecSQL(String strSQL, SqlTransaction oTrans) 位置 e:\工作\TaoAnJu\TaoAnJu\App_Code\Util\DsConnectionDB.cs:行号 491
+错误描述:'&lt;' 附近有语法错误。
+</callstack><severity>5</severity><errmessage>SQL=delete from tb_ViewInfo where int_VId=&lt;a href ="ViewInfo_List.aspx?itemid=1004&amp;vid=7"&gt;7&lt;/a&gt;</errmessage></err>
+﻿<err><logtime>2014-04-03 09:21:48</logtime><source>LogException</source><subsource>App_Code.0z8opx5r</subsource><callstack>方法名:Void LogException()
+原程序或对象名:App_Code.0z8opx5r
+状态:   在 TaoAnJu.Util.SysException.LogException() 位置 e:\工作\TaoAnJu\TaoAnJu\App_Code\Util\SysException.cs:行号 65
+   在 TaoAnJu.Util.SysException..ctor(String message, Exception inner, Int32 intSeverity, Boolean boolLogExp) 位置 e:\工作\TaoAnJu\TaoAnJu\App_Code\Util\SysException.cs:行号 60
+   在 TaoAnJu.Util.DsConnectionDB.ExecSQL(String strSQL, SqlTransaction oTrans) 位置 e:\工作\TaoAnJu\TaoAnJu\App_Code\Util\DsConnectionDB.cs:行号 498
+   在 TaoAnJu.Util.DsConnectionDB.ExecuteNonQuery(String sqlStmt) 位置 e:\工作\TaoAnJu\TaoAnJu\App_Code\Util\DsConnectionDB.cs:行号 330
+   在 admin_ViewInfo_List.GridView1_RowDeleting(Object sender, GridViewDeleteEventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 146
+错误描述:未将对象引用设置到对象的实例。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-03 09:22:49</logtime><source>DsConnectionDB</source><subsource>ExecSQL</subsource><callstack>方法名:Void OnError(System.Data.SqlClient.SqlException, Boolean)
+原程序或对象名:.Net SqlClient Data Provider
+状态:   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 TaoAnJu.Util.DsConnectionDB.ExecSQL(String strSQL, SqlTransaction oTrans) 位置 e:\工作\TaoAnJu\TaoAnJu\App_Code\Util\DsConnectionDB.cs:行号 491
+错误描述:'&lt;' 附近有语法错误。
+</callstack><severity>5</severity><errmessage>SQL=delete from tb_ViewInfo where int_VId=&lt;a href ="ViewInfo_List.aspx?itemid=1004&amp;vid=7"&gt;7&lt;/a&gt;</errmessage></err>
+﻿<err><logtime>2014-04-03 09:22:49</logtime><source>LogException</source><subsource>App_Code.0z8opx5r</subsource><callstack>方法名:Void LogException()
+原程序或对象名:App_Code.0z8opx5r
+状态:   在 TaoAnJu.Util.SysException.LogException() 位置 e:\工作\TaoAnJu\TaoAnJu\App_Code\Util\SysException.cs:行号 65
+   在 TaoAnJu.Util.SysException..ctor(String message, Exception inner, Int32 intSeverity, Boolean boolLogExp) 位置 e:\工作\TaoAnJu\TaoAnJu\App_Code\Util\SysException.cs:行号 60
+   在 TaoAnJu.Util.DsConnectionDB.ExecSQL(String strSQL, SqlTransaction oTrans) 位置 e:\工作\TaoAnJu\TaoAnJu\App_Code\Util\DsConnectionDB.cs:行号 498
+   在 TaoAnJu.Util.DsConnectionDB.ExecuteNonQuery(String sqlStmt) 位置 e:\工作\TaoAnJu\TaoAnJu\App_Code\Util\DsConnectionDB.cs:行号 330
+   在 admin_ViewInfo_List.GridView1_RowDeleting(Object sender, GridViewDeleteEventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 146
+错误描述:未将对象引用设置到对象的实例。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-03 09:23:31</logtime><source>AbortInternal</source><subsource>mscorlib</subsource><callstack>方法名:Void AbortInternal()
+原程序或对象名:mscorlib
+状态:   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 admin_ViewInfo_List.GridView1_RowDeleting(Object sender, GridViewDeleteEventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 148
+错误描述:正在中止线程。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-03 09:23:34</logtime><source>AbortInternal</source><subsource>mscorlib</subsource><callstack>方法名:Void AbortInternal()
+原程序或对象名:mscorlib
+状态:   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 admin_ViewInfo_List.GridView1_RowDeleting(Object sender, GridViewDeleteEventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 148
+错误描述:正在中止线程。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-03 09:23:36</logtime><source>AbortInternal</source><subsource>mscorlib</subsource><callstack>方法名:Void AbortInternal()
+原程序或对象名:mscorlib
+状态:   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 admin_ViewInfo_List.GridView1_RowDeleting(Object sender, GridViewDeleteEventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 148
+错误描述:正在中止线程。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-03 09:23:38</logtime><source>AbortInternal</source><subsource>mscorlib</subsource><callstack>方法名:Void AbortInternal()
+原程序或对象名:mscorlib
+状态:   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 admin_ViewInfo_List.GridView1_RowDeleting(Object sender, GridViewDeleteEventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 148
+错误描述:正在中止线程。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-03 09:23:40</logtime><source>AbortInternal</source><subsource>mscorlib</subsource><callstack>方法名:Void AbortInternal()
+原程序或对象名:mscorlib
+状态:   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 admin_ViewInfo_List.GridView1_RowDeleting(Object sender, GridViewDeleteEventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 148
+错误描述:正在中止线程。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-03 09:23:42</logtime><source>AbortInternal</source><subsource>mscorlib</subsource><callstack>方法名:Void AbortInternal()
+原程序或对象名:mscorlib
+状态:   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 admin_ViewInfo_List.GridView1_RowDeleting(Object sender, GridViewDeleteEventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 148
+错误描述:正在中止线程。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-03 09:23:44</logtime><source>AbortInternal</source><subsource>mscorlib</subsource><callstack>方法名:Void AbortInternal()
+原程序或对象名:mscorlib
+状态:   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 admin_ViewInfo_List.GridView1_RowDeleting(Object sender, GridViewDeleteEventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 148
+错误描述:正在中止线程。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-03 09:23:45</logtime><source>AbortInternal</source><subsource>mscorlib</subsource><callstack>方法名:Void AbortInternal()
+原程序或对象名:mscorlib
+状态:   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 admin_ViewInfo_List.GridView1_RowDeleting(Object sender, GridViewDeleteEventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 148
+错误描述:正在中止线程。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-03 09:23:48</logtime><source>AbortInternal</source><subsource>mscorlib</subsource><callstack>方法名:Void AbortInternal()
+原程序或对象名:mscorlib
+状态:   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 admin_ViewInfo_List.GridView1_RowDeleting(Object sender, GridViewDeleteEventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 148
+错误描述:正在中止线程。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-03 09:23:49</logtime><source>AbortInternal</source><subsource>mscorlib</subsource><callstack>方法名:Void AbortInternal()
+原程序或对象名:mscorlib
+状态:   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 admin_ViewInfo_List.GridView1_RowDeleting(Object sender, GridViewDeleteEventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 148
+错误描述:正在中止线程。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-03 09:23:51</logtime><source>AbortInternal</source><subsource>mscorlib</subsource><callstack>方法名:Void AbortInternal()
+原程序或对象名:mscorlib
+状态:   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 admin_ViewInfo_List.GridView1_RowDeleting(Object sender, GridViewDeleteEventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 148
+错误描述:正在中止线程。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-03 09:23:53</logtime><source>AbortInternal</source><subsource>mscorlib</subsource><callstack>方法名:Void AbortInternal()
+原程序或对象名:mscorlib
+状态:   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 admin_ViewInfo_List.GridView1_RowDeleting(Object sender, GridViewDeleteEventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 148
+错误描述:正在中止线程。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-03 09:23:55</logtime><source>AbortInternal</source><subsource>mscorlib</subsource><callstack>方法名:Void AbortInternal()
+原程序或对象名:mscorlib
+状态:   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 admin_ViewInfo_List.GridView1_RowDeleting(Object sender, GridViewDeleteEventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 148
+错误描述:正在中止线程。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-03 09:23:56</logtime><source>AbortInternal</source><subsource>mscorlib</subsource><callstack>方法名:Void AbortInternal()
+原程序或对象名:mscorlib
+状态:   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 admin_ViewInfo_List.GridView1_RowDeleting(Object sender, GridViewDeleteEventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 148
+错误描述:正在中止线程。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-03 09:23:58</logtime><source>AbortInternal</source><subsource>mscorlib</subsource><callstack>方法名:Void AbortInternal()
+原程序或对象名:mscorlib
+状态:   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 admin_ViewInfo_List.GridView1_RowDeleting(Object sender, GridViewDeleteEventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 148
+错误描述:正在中止线程。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-03 09:24:00</logtime><source>AbortInternal</source><subsource>mscorlib</subsource><callstack>方法名:Void AbortInternal()
+原程序或对象名:mscorlib
+状态:   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 admin_ViewInfo_List.GridView1_RowDeleting(Object sender, GridViewDeleteEventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 148
+错误描述:正在中止线程。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-03 09:24:03</logtime><source>AbortInternal</source><subsource>mscorlib</subsource><callstack>方法名:Void AbortInternal()
+原程序或对象名:mscorlib
+状态:   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 admin_ViewInfo_List.GridView1_RowDeleting(Object sender, GridViewDeleteEventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 148
+错误描述:正在中止线程。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-03 09:24:21</logtime><source>AbortInternal</source><subsource>mscorlib</subsource><callstack>方法名:Void AbortInternal()
+原程序或对象名:mscorlib
+状态:   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 admin_ViewInfo_List.btnUpLoad_Click(Object sender, EventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 119
+错误描述:正在中止线程。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-03 09:24:30</logtime><source>AbortInternal</source><subsource>mscorlib</subsource><callstack>方法名:Void AbortInternal()
+原程序或对象名:mscorlib
+状态:   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 admin_ViewInfo_List.btnUpLoad_Click(Object sender, EventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 119
+错误描述:正在中止线程。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-03 09:24:34</logtime><source>AbortInternal</source><subsource>mscorlib</subsource><callstack>方法名:Void AbortInternal()
+原程序或对象名:mscorlib
+状态:   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 admin_ViewInfo_List.GridView1_RowDeleting(Object sender, GridViewDeleteEventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 148
+错误描述:正在中止线程。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-03 09:24:36</logtime><source>AbortInternal</source><subsource>mscorlib</subsource><callstack>方法名:Void AbortInternal()
+原程序或对象名:mscorlib
+状态:   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 admin_ViewInfo_List.GridView1_RowDeleting(Object sender, GridViewDeleteEventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 148
+错误描述:正在中止线程。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-03 09:26:14</logtime><source>AbortInternal</source><subsource>mscorlib</subsource><callstack>方法名:Void AbortInternal()
+原程序或对象名:mscorlib
+状态:   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 admin_ViewInfo_List.btnUpLoad_Click(Object sender, EventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 119
+错误描述:正在中止线程。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-03 09:31:26</logtime><source>GetPropertyValue</source><subsource>System.Web</subsource><callstack>方法名:System.Object GetPropertyValue(System.Object, System.String)
+原程序或对象名:System.Web
+状态:   在 System.Web.UI.DataBinder.GetPropertyValue(Object container, String propName)
+   在 System.Web.UI.WebControls.DataList.CreateControlHierarchy(Boolean useDataSource)
+   在 System.Web.UI.WebControls.BaseDataList.OnDataBinding(EventArgs e)
+   在 System.Web.UI.WebControls.BaseDataList.DataBind()
+   在 admin_ViewInfo_List.InitData() 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 75
+错误描述:DataBinding:“System.Data.DataRowView”不包含名为“int_Pid”的属性。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-03 09:32:37</logtime><source>AbortInternal</source><subsource>mscorlib</subsource><callstack>方法名:Void AbortInternal()
+原程序或对象名:mscorlib
+状态:   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 admin_ViewInfo_List.btnUpLoad_Click(Object sender, EventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 121
+错误描述:正在中止线程。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-03 09:39:30</logtime><source>AbortInternal</source><subsource>mscorlib</subsource><callstack>方法名:Void AbortInternal()
+原程序或对象名:mscorlib
+状态:   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 admin_ViewInfo_List.DataList1_ItemCommand(Object source, DataListCommandEventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 180
+错误描述:正在中止线程。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-03 09:49:43</logtime><source>AbortInternal</source><subsource>mscorlib</subsource><callstack>方法名:Void AbortInternal()
+原程序或对象名:mscorlib
+状态:   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 admin_ViewInfo_List.btnUpLoad_Click(Object sender, EventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 125
+错误描述:正在中止线程。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-03 09:50:15</logtime><source>AbortInternal</source><subsource>mscorlib</subsource><callstack>方法名:Void AbortInternal()
+原程序或对象名:mscorlib
+状态:   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 admin_ViewInfo_List.btnUpLoad_Click(Object sender, EventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 125
+错误描述:正在中止线程。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-03 09:50:25</logtime><source>AbortInternal</source><subsource>mscorlib</subsource><callstack>方法名:Void AbortInternal()
+原程序或对象名:mscorlib
+状态:   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 admin_ViewInfo_List.btnUpLoad_Click(Object sender, EventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 125
+错误描述:正在中止线程。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-03 09:50:35</logtime><source>AbortInternal</source><subsource>mscorlib</subsource><callstack>方法名:Void AbortInternal()
+原程序或对象名:mscorlib
+状态:   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 admin_ViewInfo_List.btnUpLoad_Click(Object sender, EventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 125
+错误描述:正在中止线程。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-03 09:50:54</logtime><source>AbortInternal</source><subsource>mscorlib</subsource><callstack>方法名:Void AbortInternal()
+原程序或对象名:mscorlib
+状态:   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 admin_ViewInfo_List.btnUpLoad_Click(Object sender, EventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 125
+错误描述:正在中止线程。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-03 09:51:05</logtime><source>AbortInternal</source><subsource>mscorlib</subsource><callstack>方法名:Void AbortInternal()
+原程序或对象名:mscorlib
+状态:   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 admin_ViewInfo_List.btnUpLoad_Click(Object sender, EventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 125
+错误描述:正在中止线程。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-03 09:51:24</logtime><source>AbortInternal</source><subsource>mscorlib</subsource><callstack>方法名:Void AbortInternal()
+原程序或对象名:mscorlib
+状态:   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 admin_ViewInfo_List.btnUpLoad_Click(Object sender, EventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 125
+错误描述:正在中止线程。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-03 09:52:02</logtime><source>AbortInternal</source><subsource>mscorlib</subsource><callstack>方法名:Void AbortInternal()
+原程序或对象名:mscorlib
+状态:   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 admin_ViewInfo_List.DataList1_ItemCommand(Object source, DataListCommandEventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 184
+错误描述:正在中止线程。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+</errlog>

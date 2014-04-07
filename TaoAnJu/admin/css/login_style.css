@@ -1,0 +1,44 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin:0;
+	padding:0;
+	font-family:'微软雅黑',Verdana, Geneva, sans-serif;
+	line-height:22px;
+	font-size:12px;
+	}
+body{
+	background: url(../images/body_bg.jpg) repeat-x;
+	background-color:#10497c;
+	}
+.main
+{
+	background:url(../images/login_bg01.jpg) no-repeat;
+	width:867px;
+	height:596px;
+	margin: 0 auto;	
+}
+.main_title{
+	padding:182px 0 0 204px;
+	color:#0f4274;
+	font-size:2.0em;
+	font-weight:bold;
+	}
+.main_info{
+	padding:20px 0 0 390px;
+	}
+.code,.text{
+	width:80px;
+	height:20px;
+	border:1px solid #505c67;
+	}
+.text{
+	width:140px;
+	}
+.button{
+	background: url(../images/login_button.jpg) no-repeat;
+	width:81px;
+	height:27px;
+	border:none;
+	}

@@ -1,0 +1,363 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<errlog>
+<err><logtime>2014-04-02 18:04:14</logtime><source>AbortInternal</source><subsource>mscorlib</subsource><callstack>方法名:Void AbortInternal()
+原程序或对象名:mscorlib
+状态:   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 admin_ViewInfo_List.btnUpLoad_Click(Object sender, EventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 118
+错误描述:正在中止线程。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-02 18:23:44</logtime><source>AbortInternal</source><subsource>mscorlib</subsource><callstack>方法名:Void AbortInternal()
+原程序或对象名:mscorlib
+状态:   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 admin_ViewInfo_List.btnUpLoad_Click(Object sender, EventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 119
+错误描述:正在中止线程。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-02 18:23:55</logtime><source>AbortInternal</source><subsource>mscorlib</subsource><callstack>方法名:Void AbortInternal()
+原程序或对象名:mscorlib
+状态:   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 admin_ViewInfo_List.btnUpLoad_Click(Object sender, EventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 119
+错误描述:正在中止线程。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-02 18:24:02</logtime><source>AbortInternal</source><subsource>mscorlib</subsource><callstack>方法名:Void AbortInternal()
+原程序或对象名:mscorlib
+状态:   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 admin_ViewInfo_List.btnUpLoad_Click(Object sender, EventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 119
+错误描述:正在中止线程。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-02 18:24:08</logtime><source>AbortInternal</source><subsource>mscorlib</subsource><callstack>方法名:Void AbortInternal()
+原程序或对象名:mscorlib
+状态:   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 admin_ViewInfo_List.btnUpLoad_Click(Object sender, EventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 119
+错误描述:正在中止线程。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-02 18:24:12</logtime><source>AbortInternal</source><subsource>mscorlib</subsource><callstack>方法名:Void AbortInternal()
+原程序或对象名:mscorlib
+状态:   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 admin_ViewInfo_List.btnUpLoad_Click(Object sender, EventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 119
+错误描述:正在中止线程。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-02 18:24:53</logtime><source>AbortInternal</source><subsource>mscorlib</subsource><callstack>方法名:Void AbortInternal()
+原程序或对象名:mscorlib
+状态:   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 admin_ViewInfo_List.DataList1_ItemCommand(Object source, DataListCommandEventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 142
+错误描述:正在中止线程。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-02 19:18:00</logtime><source>AbortInternal</source><subsource>mscorlib</subsource><callstack>方法名:Void AbortInternal()
+原程序或对象名:mscorlib
+状态:   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 admin_ViewInfo_List.GridView1_RowDeleting(Object sender, GridViewDeleteEventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 138
+错误描述:正在中止线程。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-02 19:18:02</logtime><source>AbortInternal</source><subsource>mscorlib</subsource><callstack>方法名:Void AbortInternal()
+原程序或对象名:mscorlib
+状态:   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 admin_ViewInfo_List.GridView1_RowDeleting(Object sender, GridViewDeleteEventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 138
+错误描述:正在中止线程。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-02 19:18:06</logtime><source>AbortInternal</source><subsource>mscorlib</subsource><callstack>方法名:Void AbortInternal()
+原程序或对象名:mscorlib
+状态:   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 admin_ViewInfo_List.GridView1_RowDeleting(Object sender, GridViewDeleteEventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 138
+错误描述:正在中止线程。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-02 19:33:39</logtime><source>AbortInternal</source><subsource>mscorlib</subsource><callstack>方法名:Void AbortInternal()
+原程序或对象名:mscorlib
+状态:   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 admin_ViewInfo_List.GridView1_RowDeleting(Object sender, GridViewDeleteEventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 138
+错误描述:正在中止线程。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-02 19:37:39</logtime><source>AbortInternal</source><subsource>mscorlib</subsource><callstack>方法名:Void AbortInternal()
+原程序或对象名:mscorlib
+状态:   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 admin_ViewInfo_List.GridView1_RowDeleting(Object sender, GridViewDeleteEventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 134
+错误描述:正在中止线程。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-02 19:37:52</logtime><source>AbortInternal</source><subsource>mscorlib</subsource><callstack>方法名:Void AbortInternal()
+原程序或对象名:mscorlib
+状态:   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 admin_ViewInfo_List.btnUpLoad_Click(Object sender, EventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 107
+错误描述:正在中止线程。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-02 19:38:42</logtime><source>AbortInternal</source><subsource>mscorlib</subsource><callstack>方法名:Void AbortInternal()
+原程序或对象名:mscorlib
+状态:   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 admin_ViewInfo_List.btnUpLoad_Click(Object sender, EventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 107
+错误描述:正在中止线程。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-02 19:38:46</logtime><source>AbortInternal</source><subsource>mscorlib</subsource><callstack>方法名:Void AbortInternal()
+原程序或对象名:mscorlib
+状态:   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 admin_ViewInfo_List.btnUpLoad_Click(Object sender, EventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 107
+错误描述:正在中止线程。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-02 19:38:48</logtime><source>AbortInternal</source><subsource>mscorlib</subsource><callstack>方法名:Void AbortInternal()
+原程序或对象名:mscorlib
+状态:   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 admin_ViewInfo_List.btnUpLoad_Click(Object sender, EventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 107
+错误描述:正在中止线程。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-02 19:38:50</logtime><source>AbortInternal</source><subsource>mscorlib</subsource><callstack>方法名:Void AbortInternal()
+原程序或对象名:mscorlib
+状态:   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 admin_ViewInfo_List.btnUpLoad_Click(Object sender, EventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 107
+错误描述:正在中止线程。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-02 19:38:53</logtime><source>AbortInternal</source><subsource>mscorlib</subsource><callstack>方法名:Void AbortInternal()
+原程序或对象名:mscorlib
+状态:   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 admin_ViewInfo_List.btnUpLoad_Click(Object sender, EventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 107
+错误描述:正在中止线程。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-02 19:38:57</logtime><source>AbortInternal</source><subsource>mscorlib</subsource><callstack>方法名:Void AbortInternal()
+原程序或对象名:mscorlib
+状态:   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 admin_ViewInfo_List.btnUpLoad_Click(Object sender, EventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 107
+错误描述:正在中止线程。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-02 19:38:59</logtime><source>AbortInternal</source><subsource>mscorlib</subsource><callstack>方法名:Void AbortInternal()
+原程序或对象名:mscorlib
+状态:   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 admin_ViewInfo_List.btnUpLoad_Click(Object sender, EventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 107
+错误描述:正在中止线程。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-02 19:39:01</logtime><source>AbortInternal</source><subsource>mscorlib</subsource><callstack>方法名:Void AbortInternal()
+原程序或对象名:mscorlib
+状态:   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 admin_ViewInfo_List.btnUpLoad_Click(Object sender, EventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 107
+错误描述:正在中止线程。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-02 19:39:05</logtime><source>AbortInternal</source><subsource>mscorlib</subsource><callstack>方法名:Void AbortInternal()
+原程序或对象名:mscorlib
+状态:   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 admin_ViewInfo_List.btnUpLoad_Click(Object sender, EventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 107
+错误描述:正在中止线程。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-02 19:39:08</logtime><source>AbortInternal</source><subsource>mscorlib</subsource><callstack>方法名:Void AbortInternal()
+原程序或对象名:mscorlib
+状态:   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 admin_ViewInfo_List.btnUpLoad_Click(Object sender, EventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 107
+错误描述:正在中止线程。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-02 19:39:10</logtime><source>AbortInternal</source><subsource>mscorlib</subsource><callstack>方法名:Void AbortInternal()
+原程序或对象名:mscorlib
+状态:   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 admin_ViewInfo_List.btnUpLoad_Click(Object sender, EventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 107
+错误描述:正在中止线程。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-02 19:39:12</logtime><source>AbortInternal</source><subsource>mscorlib</subsource><callstack>方法名:Void AbortInternal()
+原程序或对象名:mscorlib
+状态:   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 admin_ViewInfo_List.btnUpLoad_Click(Object sender, EventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 107
+错误描述:正在中止线程。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-02 19:39:14</logtime><source>AbortInternal</source><subsource>mscorlib</subsource><callstack>方法名:Void AbortInternal()
+原程序或对象名:mscorlib
+状态:   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 admin_ViewInfo_List.btnUpLoad_Click(Object sender, EventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 107
+错误描述:正在中止线程。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-02 19:39:17</logtime><source>AbortInternal</source><subsource>mscorlib</subsource><callstack>方法名:Void AbortInternal()
+原程序或对象名:mscorlib
+状态:   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 admin_ViewInfo_List.btnUpLoad_Click(Object sender, EventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 107
+错误描述:正在中止线程。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-02 19:39:20</logtime><source>AbortInternal</source><subsource>mscorlib</subsource><callstack>方法名:Void AbortInternal()
+原程序或对象名:mscorlib
+状态:   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 admin_ViewInfo_List.btnUpLoad_Click(Object sender, EventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 107
+错误描述:正在中止线程。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-02 19:39:22</logtime><source>AbortInternal</source><subsource>mscorlib</subsource><callstack>方法名:Void AbortInternal()
+原程序或对象名:mscorlib
+状态:   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 admin_ViewInfo_List.btnUpLoad_Click(Object sender, EventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 107
+错误描述:正在中止线程。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-02 19:39:24</logtime><source>AbortInternal</source><subsource>mscorlib</subsource><callstack>方法名:Void AbortInternal()
+原程序或对象名:mscorlib
+状态:   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 admin_ViewInfo_List.btnUpLoad_Click(Object sender, EventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 107
+错误描述:正在中止线程。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-02 19:39:26</logtime><source>AbortInternal</source><subsource>mscorlib</subsource><callstack>方法名:Void AbortInternal()
+原程序或对象名:mscorlib
+状态:   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 admin_ViewInfo_List.btnUpLoad_Click(Object sender, EventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 107
+错误描述:正在中止线程。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-02 19:39:29</logtime><source>AbortInternal</source><subsource>mscorlib</subsource><callstack>方法名:Void AbortInternal()
+原程序或对象名:mscorlib
+状态:   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 admin_ViewInfo_List.btnUpLoad_Click(Object sender, EventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 107
+错误描述:正在中止线程。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-02 19:39:32</logtime><source>AbortInternal</source><subsource>mscorlib</subsource><callstack>方法名:Void AbortInternal()
+原程序或对象名:mscorlib
+状态:   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 admin_ViewInfo_List.btnUpLoad_Click(Object sender, EventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 107
+错误描述:正在中止线程。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-02 19:52:45</logtime><source>AbortInternal</source><subsource>mscorlib</subsource><callstack>方法名:Void AbortInternal()
+原程序或对象名:mscorlib
+状态:   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 admin_ViewInfo_List.btnUpLoad_Click(Object sender, EventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 114
+错误描述:正在中止线程。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-02 19:52:49</logtime><source>AbortInternal</source><subsource>mscorlib</subsource><callstack>方法名:Void AbortInternal()
+原程序或对象名:mscorlib
+状态:   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 admin_ViewInfo_List.btnUpLoad_Click(Object sender, EventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 114
+错误描述:正在中止线程。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-02 19:58:58</logtime><source>AbortInternal</source><subsource>mscorlib</subsource><callstack>方法名:Void AbortInternal()
+原程序或对象名:mscorlib
+状态:   在 System.Threading.Thread.AbortInternal()
+   在 System.Threading.Thread.Abort(Object stateInfo)
+   在 System.Web.HttpResponse.End()
+   在 System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   在 System.Web.HttpResponse.Redirect(String url)
+   在 admin_ViewInfo_List.btnUpLoad_Click(Object sender, EventArgs e) 位置 e:\工作\TaoAnJu\TaoAnJu\admin\ViewInfo_List.aspx.cs:行号 119
+错误描述:正在中止线程。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+</errlog>
