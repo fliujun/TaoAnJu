@@ -48,4 +48,141 @@
    在 admin_RegInfo_List.Page_Load(Object sender, EventArgs e) 位置 d:\Source\Repos\TaoAnJu\TaoAnJu\admin\RegInfo_List.aspx.cs:行号 22
 错误描述:在选定的数据源上未找到名为“vc_ItemName”的字段或属性。
 </callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-08 02:19:47</logtime><source>DsConnectionDB</source><subsource>ExecSQLWithScalar</subsource><callstack>方法名:Void OnError(System.Data.SqlClient.SqlException, Boolean, System.Action`1[System.Action])
+原程序或对象名:.Net SqlClient Data Provider
+状态:   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, SqlDataReader ds)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   在 TaoAnJu.Util.DsConnectionDB.ExecSQLWithScalar(String strSQL, SqlTransaction oTrans) 位置 d:\Source\Repos\TaoAnJu\TaoAnJu\App_Code\Util\DsConnectionDB.cs:行号 613
+错误描述:列名 'vc_ItemId' 无效。
+</callstack><severity>5</severity><errmessage>SQL=select count(*) from tb_RegInfo where vc_ItemId=1004 and vc_Mobile='123'</errmessage></err>
+﻿<err><logtime>2014-04-08 02:19:47</logtime><source>LogException</source><subsource>App_Code.wx7s9pio</subsource><callstack>方法名:Void LogException()
+原程序或对象名:App_Code.wx7s9pio
+状态:   在 TaoAnJu.Util.SysException.LogException() 位置 d:\Source\Repos\TaoAnJu\TaoAnJu\App_Code\Util\SysException.cs:行号 65
+   在 TaoAnJu.Util.SysException..ctor(String message, Exception inner, Int32 intSeverity, Boolean boolLogExp) 位置 d:\Source\Repos\TaoAnJu\TaoAnJu\App_Code\Util\SysException.cs:行号 60
+   在 TaoAnJu.Util.DsConnectionDB.ExecSQLWithScalar(String strSQL, SqlTransaction oTrans) 位置 d:\Source\Repos\TaoAnJu\TaoAnJu\App_Code\Util\DsConnectionDB.cs:行号 622
+   在 TaoAnJu.Util.DsConnectionDB.ExecuteScalar(String sqlStmt) 位置 d:\Source\Repos\TaoAnJu\TaoAnJu\App_Code\Util\DsConnectionDB.cs:行号 310
+   在 MyHandler.baoming(JsonData&amp; Result) 位置 d:\Source\Repos\TaoAnJu\TaoAnJu\Handler\MyHandler.ashx:行号 547
+错误描述:未将对象引用设置到对象的实例。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-08 02:20:02</logtime><source>DsConnectionDB</source><subsource>ExecSQLWithScalar</subsource><callstack>方法名:Void OnError(System.Data.SqlClient.SqlException, Boolean, System.Action`1[System.Action])
+原程序或对象名:.Net SqlClient Data Provider
+状态:   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, SqlDataReader ds)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   在 TaoAnJu.Util.DsConnectionDB.ExecSQLWithScalar(String strSQL, SqlTransaction oTrans) 位置 d:\Source\Repos\TaoAnJu\TaoAnJu\App_Code\Util\DsConnectionDB.cs:行号 613
+错误描述:列名 'vc_ItemId' 无效。
+</callstack><severity>5</severity><errmessage>SQL=select count(*) from tb_RegInfo where vc_ItemId=1004 and vc_Mobile='123'</errmessage></err>
+﻿<err><logtime>2014-04-08 02:20:06</logtime><source>LogException</source><subsource>App_Code.wx7s9pio</subsource><callstack>方法名:Void LogException()
+原程序或对象名:App_Code.wx7s9pio
+状态:   在 TaoAnJu.Util.SysException.LogException() 位置 d:\Source\Repos\TaoAnJu\TaoAnJu\App_Code\Util\SysException.cs:行号 65
+   在 TaoAnJu.Util.SysException..ctor(String message, Exception inner, Int32 intSeverity, Boolean boolLogExp) 位置 d:\Source\Repos\TaoAnJu\TaoAnJu\App_Code\Util\SysException.cs:行号 60
+   在 TaoAnJu.Util.DsConnectionDB.ExecSQLWithScalar(String strSQL, SqlTransaction oTrans) 位置 d:\Source\Repos\TaoAnJu\TaoAnJu\App_Code\Util\DsConnectionDB.cs:行号 622
+   在 TaoAnJu.Util.DsConnectionDB.ExecuteScalar(String sqlStmt) 位置 d:\Source\Repos\TaoAnJu\TaoAnJu\App_Code\Util\DsConnectionDB.cs:行号 310
+   在 MyHandler.baoming(JsonData&amp; Result) 位置 d:\Source\Repos\TaoAnJu\TaoAnJu\Handler\MyHandler.ashx:行号 547
+错误描述:未将对象引用设置到对象的实例。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-08 02:21:35</logtime><source>DsConnectionDB</source><subsource>ExecSQLWithScalar</subsource><callstack>方法名:Void OnError(System.Data.SqlClient.SqlException, Boolean, System.Action`1[System.Action])
+原程序或对象名:.Net SqlClient Data Provider
+状态:   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, SqlDataReader ds)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   在 TaoAnJu.Util.DsConnectionDB.ExecSQLWithScalar(String strSQL, SqlTransaction oTrans) 位置 d:\Source\Repos\TaoAnJu\TaoAnJu\App_Code\Util\DsConnectionDB.cs:行号 613
+错误描述:列名 'vc_ItemId' 无效。
+</callstack><severity>5</severity><errmessage>SQL=select count(*) from tb_RegInfo where vc_ItemId=1004 and vc_Mobile='123'</errmessage></err>
+﻿<err><logtime>2014-04-08 02:21:35</logtime><source>LogException</source><subsource>App_Code.wx7s9pio</subsource><callstack>方法名:Void LogException()
+原程序或对象名:App_Code.wx7s9pio
+状态:   在 TaoAnJu.Util.SysException.LogException() 位置 d:\Source\Repos\TaoAnJu\TaoAnJu\App_Code\Util\SysException.cs:行号 65
+   在 TaoAnJu.Util.SysException..ctor(String message, Exception inner, Int32 intSeverity, Boolean boolLogExp) 位置 d:\Source\Repos\TaoAnJu\TaoAnJu\App_Code\Util\SysException.cs:行号 60
+   在 TaoAnJu.Util.DsConnectionDB.ExecSQLWithScalar(String strSQL, SqlTransaction oTrans) 位置 d:\Source\Repos\TaoAnJu\TaoAnJu\App_Code\Util\DsConnectionDB.cs:行号 622
+   在 TaoAnJu.Util.DsConnectionDB.ExecuteScalar(String sqlStmt) 位置 d:\Source\Repos\TaoAnJu\TaoAnJu\App_Code\Util\DsConnectionDB.cs:行号 310
+   在 MyHandler.baoming(JsonData&amp; Result) 位置 d:\Source\Repos\TaoAnJu\TaoAnJu\Handler\MyHandler.ashx:行号 547
+错误描述:未将对象引用设置到对象的实例。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-08 02:22:26</logtime><source>GetDataColumn</source><subsource>System.Data</subsource><callstack>方法名:System.Data.DataColumn GetDataColumn(System.String)
+原程序或对象名:System.Data
+状态:   在 System.Data.DataRow.GetDataColumn(String columnName)
+   在 System.Data.DataRow.get_Item(String columnName)
+   在 MyHandler.baoming(JsonData&amp; Result) 位置 d:\Source\Repos\TaoAnJu\TaoAnJu\Handler\MyHandler.ashx:行号 574
+错误描述:列“int_UserInfo”不属于表 searchresult。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-08 02:23:59</logtime><source>GetDataColumn</source><subsource>System.Data</subsource><callstack>方法名:System.Data.DataColumn GetDataColumn(System.String)
+原程序或对象名:System.Data
+状态:   在 System.Data.DataRow.GetDataColumn(String columnName)
+   在 System.Data.DataRow.get_Item(String columnName)
+   在 MyHandler.baoming(JsonData&amp; Result) 位置 d:\Source\Repos\TaoAnJu\TaoAnJu\Handler\MyHandler.ashx:行号 574
+错误描述:列“int_UserInfo”不属于表 searchresult。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-08 02:27:29</logtime><source>TryGetSimplePropertyValue</source><subsource>System.Web</subsource><callstack>方法名:Boolean TryGetSimplePropertyValue(System.Object, System.Object ByRef)
+原程序或对象名:System.Web
+状态:   在 System.Web.UI.WebControls.BoundField.TryGetSimplePropertyValue(Object dataItem, Object&amp; data)
+   在 System.Web.UI.WebControls.BoundField.GetValue(Control controlContainer)
+   在 System.Web.UI.WebControls.BoundField.OnDataBindField(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnDataBinding(EventArgs e)
+   在 System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   在 System.Web.UI.Control.DataBind()
+   在 System.Web.UI.Control.DataBindChildren()
+   在 System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   在 System.Web.UI.Control.DataBind()
+   在 System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   在 System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   在 System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   在 System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   在 System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   在 System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   在 System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   在 System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   在 System.Web.UI.WebControls.GridView.DataBind()
+   在 admin_RegInfo_List.InitData(DsConnectionDB db) 位置 d:\Source\Repos\TaoAnJu\TaoAnJu\admin\RegInfo_List.aspx.cs:行号 55
+   在 admin_RegInfo_List.Page_Load(Object sender, EventArgs e) 位置 d:\Source\Repos\TaoAnJu\TaoAnJu\admin\RegInfo_List.aspx.cs:行号 22
+错误描述:在选定的数据源上未找到名为“vc_ItemName”的字段或属性。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-08 02:27:31</logtime><source>TryGetSimplePropertyValue</source><subsource>System.Web</subsource><callstack>方法名:Boolean TryGetSimplePropertyValue(System.Object, System.Object ByRef)
+原程序或对象名:System.Web
+状态:   在 System.Web.UI.WebControls.BoundField.TryGetSimplePropertyValue(Object dataItem, Object&amp; data)
+   在 System.Web.UI.WebControls.BoundField.GetValue(Control controlContainer)
+   在 System.Web.UI.WebControls.BoundField.OnDataBindField(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnDataBinding(EventArgs e)
+   在 System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   在 System.Web.UI.Control.DataBind()
+   在 System.Web.UI.Control.DataBindChildren()
+   在 System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   在 System.Web.UI.Control.DataBind()
+   在 System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   在 System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   在 System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   在 System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   在 System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   在 System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   在 System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   在 System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   在 System.Web.UI.WebControls.GridView.DataBind()
+   在 admin_RegInfo_List.InitData(DsConnectionDB db) 位置 d:\Source\Repos\TaoAnJu\TaoAnJu\admin\RegInfo_List.aspx.cs:行号 55
+   在 admin_RegInfo_List.Page_Load(Object sender, EventArgs e) 位置 d:\Source\Repos\TaoAnJu\TaoAnJu\admin\RegInfo_List.aspx.cs:行号 22
+错误描述:在选定的数据源上未找到名为“vc_ItemName”的字段或属性。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
 </errlog>

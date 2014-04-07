@@ -521,23 +521,75 @@ public class MyHandler : IHttpHandler
         int id = this.getInt("id");
         string username = this.getString("username");
         string usertel = this.getString("usertel");
-        using (DsConnectionDB db = new DsConnectionDB(RiSystem.DBConnNormal))
+        //using (DsConnectionDB db = new DsConnectionDB(RiSystem.DBConnNormal))
+        //{
+        //    SqlTransaction trans = db.BeginTransaction();
+        //    try
+        //    {
+        //        SqlCommand cmd = db.CreateCommand("insert into tb_RegInfo(int_ItemId,vc_Name,vc_Mobile,dt_CreateDate)values(@id,@username,@usertel,GETDATE())");
+        //        db.AddParameter(cmd, "id", SqlDbType.Int, id);
+        //        db.AddParameter(cmd, "username", SqlDbType.NVarChar, username);
+        //        db.AddParameter(cmd, "usertel", SqlDbType.NVarChar, usertel);
+        //        int i = cmd.ExecuteNonQuery();
+        //        db.CommitTransaction();
+        //        Result.Set("data", i);
+        //    }
+        //    catch (Exception e)
+        //    {
+        //        trans.Rollback();
+        //        Result.SetError(e.Message);
+        //    }
+        //}
+        DsConnectionDB db = new DsConnectionDB(RiSystem.DBConnNormal);
+        try
         {
-            SqlTransaction trans = db.BeginTransaction();
-            try
+            string sql = "select count(*) from tb_RegInfo where int_ItemId=" + id + " and vc_Mobile='" + usertel + "'";
+            if ((int)db.ExecuteScalar(sql) > 0)
             {
-                SqlCommand cmd = db.CreateCommand("insert into tb_RegInfo(int_ItemId,vc_Name,vc_Mobile,dt_CreateDate)values(@id,@username,@usertel,GETDATE())");
-                db.AddParameter(cmd, "id", SqlDbType.Int, id);
-                db.AddParameter(cmd, "username", SqlDbType.NVarChar, username);
-                db.AddParameter(cmd, "usertel", SqlDbType.NVarChar, usertel);
-                int i = cmd.ExecuteNonQuery();
-                db.CommitTransaction();
-                Result.Set("data", i);
+                Result.SetError("您已经报名，不能对同一楼盘重复提交报名。");
+                return;
             }
-            catch (Exception e)
+            tb_RegInfoEntity r = new tb_RegInfoEntity();
+            tb_RegInfoEntity_Op ro = new tb_RegInfoEntity_Op(db);
+            r.int_ItemId = id;
+            r.dt_CreateDate = DateTime.Now;
+            r.vc_Mobile = usertel;
+            r.vc_Name = username;
+            ro.Insert(r);
+            //同时判断客户表里此客户是否存在
+            sql = "select count(*) from tb_Customer where vc_Mobile='" + usertel + "'";
+            if ((int)db.ExecuteScalar(sql) == 0)
             {
-                trans.Rollback();
-                Result.SetError(e.Message);
+                //不存在则同时添加到客户表
+                tb_CustomerEntity c = new tb_CustomerEntity();
+                tb_CustomerEntity_Op co = new tb_CustomerEntity_Op(db);
+                c.dt_CreateDate = DateTime.Now;
+                c.vc_Mobile = usertel;
+                c.vc_Name = username;
+                //自动分配给服务客户数量最少的销售代表，没有销售代表则分配给管理员
+                sql = "select top 1 int_UserId from tb_UserInfo order by int_CCount asc,int_UserType desc";
+                DataTable dt = db.ExecuteQuery(sql).Tables[0];
+                if (dt.Rows.Count > 0)
+                {
+                    c.int_UserId = Convert.ToInt32(dt.Rows[0]["int_UserId"].ToString());
+                }
+                else
+                {
+                    c.int_UserId = 0;
+                }
+                co.Insert(c);
+            }
+        }
+        catch (System.Exception ee)
+        {
+            Loger.logErr("失败", ee);
+            Result.SetError(ee.Message);
+        }
+        finally
+        {
+            if (db != null)
+            {
+                db.Close();
             }
         }
     }

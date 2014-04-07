@@ -14,6 +14,7 @@
         if ($(this).attr("class").indexOf("over") > -1) {
             showAlert("此楼盘已经下线，请关注其他楼盘");
         } else {
+            $btnApply.html($(this).html());
             var id = $(this).attr("title");
             $("#baoming")[0].reset();
             $("#itemId").val(id);
