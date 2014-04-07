@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<errlog>
+<err><logtime>2014-04-08 01:09:17</logtime><source>TryGetSimplePropertyValue</source><subsource>System.Web</subsource><callstack>方法名:Boolean TryGetSimplePropertyValue(System.Object, System.Object ByRef)
+原程序或对象名:System.Web
+状态:   在 System.Web.UI.WebControls.BoundField.TryGetSimplePropertyValue(Object dataItem, Object&amp; data)
+   在 System.Web.UI.WebControls.BoundField.GetValue(Control controlContainer)
+   在 System.Web.UI.WebControls.BoundField.OnDataBindField(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnDataBinding(EventArgs e)
+   在 System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   在 System.Web.UI.Control.DataBind()
+   在 System.Web.UI.Control.DataBindChildren()
+   在 System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   在 System.Web.UI.Control.DataBind()
+   在 System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   在 System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   在 System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   在 System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   在 System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   在 System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   在 System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   在 System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   在 System.Web.UI.WebControls.GridView.DataBind()
+   在 admin_RegInfo_List.InitData(DsConnectionDB db) 位置 d:\Source\Repos\TaoAnJu\TaoAnJu\admin\RegInfo_List.aspx.cs:行号 55
+   在 admin_RegInfo_List.Page_Load(Object sender, EventArgs e) 位置 d:\Source\Repos\TaoAnJu\TaoAnJu\admin\RegInfo_List.aspx.cs:行号 22
+错误描述:在选定的数据源上未找到名为“vc_ItemName”的字段或属性。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+﻿<err><logtime>2014-04-08 01:09:29</logtime><source>TryGetSimplePropertyValue</source><subsource>System.Web</subsource><callstack>方法名:Boolean TryGetSimplePropertyValue(System.Object, System.Object ByRef)
+原程序或对象名:System.Web
+状态:   在 System.Web.UI.WebControls.BoundField.TryGetSimplePropertyValue(Object dataItem, Object&amp; data)
+   在 System.Web.UI.WebControls.BoundField.GetValue(Control controlContainer)
+   在 System.Web.UI.WebControls.BoundField.OnDataBindField(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnDataBinding(EventArgs e)
+   在 System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   在 System.Web.UI.Control.DataBind()
+   在 System.Web.UI.Control.DataBindChildren()
+   在 System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   在 System.Web.UI.Control.DataBind()
+   在 System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   在 System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   在 System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   在 System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   在 System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   在 System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   在 System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   在 System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   在 System.Web.UI.WebControls.GridView.DataBind()
+   在 admin_RegInfo_List.InitData(DsConnectionDB db) 位置 d:\Source\Repos\TaoAnJu\TaoAnJu\admin\RegInfo_List.aspx.cs:行号 55
+   在 admin_RegInfo_List.Page_Load(Object sender, EventArgs e) 位置 d:\Source\Repos\TaoAnJu\TaoAnJu\admin\RegInfo_List.aspx.cs:行号 22
+错误描述:在选定的数据源上未找到名为“vc_ItemName”的字段或属性。
+</callstack><severity>5</severity><errmessage>失败</errmessage></err>
+</errlog>

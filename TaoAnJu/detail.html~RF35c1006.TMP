@@ -1,0 +1,219 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>淘安居</title>
+
+    <link href="Content/css/detail.min.css?v=1" rel="stylesheet" />
+    <!--<link href="Content/slider/css/flexslider.css" rel="stylesheet" />-->
+    <!--<link href="Content/font-awesome-4.0.3/css/font-awesome.min.css" rel="stylesheet" />-->
+    <link href="Content/lightbox/css/lightbox.css?v=1" rel="stylesheet" />
+</head>
+<body>
+    <!--顶部-->
+    <header>
+        <!--搜索-->
+        <div class="container">
+            <div class="row">
+                <div class="logo  col-lg-6 col-col-md-6 col-sm-6 col-xs-12">
+                    <a href="index.html"><img src="Content/images/logo2.png" /></a>
+                    <!--选择地区-->
+                    <a id="btnArea" href="javascript:void(0);" style="padding:0;"><span id="txtArea">北京</span><span class="glyphicon glyphicon-chevron-down"></span></a>
+                    <div id="areaWin">
+                        <ul>
+                            <li><a href="javascript:void(0)">全部</a></li>
+                            <li><a href="javascript:void(0)">北京</a></li>
+                            <li><a href="javascript:void(0)">香河</a></li>
+                            <li><a href="javascript:void(0)">燕郊</a></li>
+                            <li><a href="javascript:void(0)">固安</a></li>
+                            <li><a href="javascript:void(0)">海南</a></li>
+                        </ul>
+                        <div>
+                            <a href="javascript:void(0);" onclick="javascript: $('#areaWin').fadeOut();"><span id="btnAlertClose" class="glyphicon glyphicon-remove-circle"></span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--搜索-->
+                <div id="searchDiv" class="col-lg-3 col-lg-offset-3 col-col-md-3 col-md-offset-3 col-sm-3 col-xs-offset-3 col-xs-12 col-xs-offset-0">
+                    <div class="input-group">
+                        <input type="text" class="form-control">
+                        <a id="btnSearch" href="javascript:void(0)" class="input-group-addon"><span class="glyphicon glyphicon-search"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <hr class="fullLine" />
+
+    <!--内容-->
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div id="headshow">
+                        <div id="ItemPic" class="col-lg-8">
+                        </div>
+                        <div class="col-lg-4">
+                            <!--项目名称-->
+                            <div id="title">
+                            </div>
+                            <!--标签-->
+                            <div id="label">
+                                <div class="label label-warning">推荐</div>
+                                <div class="label label-primary">接送</div>
+                                <div class="label label-danger">折扣</div>
+                            </div>
+                            <!--在线沟通-->
+                            <div id="Hotline" class="alert alert-warning">
+                                在线沟通：<a href="http://sighttp.qq.com/authd?IDKEY=ae8276e7dd45b105dc2ca565f0c620b11ed7e0cdb7ea5fdb" target="_blank">
+                                    <img title="发起会话" alt="发起会话" src="http://wpa.qq.com/pa?p=2:729881888:41" border="0" data-bd-imgshare-binded="1">
+                                </a><br />
+                            </div>
+                            <!--报名-->
+                            <form id="baoming" role="form">
+                                <input id="itemId" type="hidden" name="itemId" value="" />
+                                <div class="form-group">
+                                    <label for="username">姓名</label>
+                                    <input type="text" class="form-control" required id="username" placeholder="怎么称呼您">
+                                </div>
+                                <div class="form-group">
+                                    <label for="usertel">手机</label>
+                                    <input type="text" class="form-control" required id="usertel" placeholder="将作为会员标识的唯一凭证">
+                                </div>
+                                <div class="btn-group" style="margin-top:10px;">
+                                    <!--<input id="btnApply" type="button" data-loading-text="正在提交..." class="btn btn-sm btn-danger" value="申请" />-->
+                                    <button id="btnApply" type="button" class="btn btn-sm btn-danger" data-loading-text="正在提交...">申请</button>
+                                    <input type="button" id="btnBuyHelp" data-container="body" data-toggle="popover" data-placement="top" class="btn btn-sm btn-default" value="？" />
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <div class="row">
+                <!--表格详细信息-->
+                <div id="tableinfo" class="col-lg-8">
+                </div>
+                <div class="col-lg-4">
+                    <div class="row">
+                        <a href="Content/images/EQ.jpg" data-lightbox="wechatEQ" data-title="淘安居官方微信二维码，扫一扫关注就有惊喜，红包火热派发中！您还可以直接添加微信号：taoanjufc"><img src="Content/images/EQ.jpg" class="col-lg-12" style="width:100%;margin-bottom:20px;" /></a>
+                    </div>
+                    <div class="row">
+                        <!--视频展示-->
+                        <div id="vedio">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!--图片展示-->
+                        <div id="itemPics" class="col-lg-12">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <div class="clear"></div>
+    <!--底部-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-lg-4">
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                        <img src="Content/images/about.png" style="width:100%;" />
+                    </div>
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                        <h1>关于</h1>
+                        <ul>
+                            <li><a href="javascript:void(0)" onclick="showB(1);">淘安居房地产经纪（北京）有限公司</a></li>
+                            <li><a href="javascript:void(0)" onclick="showB(2);">免费咨询：400-668-5555 转 6688</a></li>
+                            <li><a href="javascript:void(0)" onclick="showB(3);">了解我们，走进淘安居</a></li>
+                            <li><a href="javascript:void(0)" onclick="showB(4);">开发商：北京硕日新宇投资有限公司</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-lg-4">
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                        <img src="Content/images/help.png" style="width:100%;" />
+                    </div>
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                        <h1>帮助</h1>
+                        <ul>
+                            <li><a href="javascript:void(0)" onclick="showB(5);">什么是淘安居？</a></li>
+                            <li><a href="javascript:void(0)" onclick="showB(6);">为什么选择淘安居？</a></li>
+                            <li><a href="javascript:void(0)" onclick="showB(7);">淘安居线上线下，比其他房产电商优势在哪？</a></li>
+                            <li><a href="javascript:void(0)" onclick="showB(8);">报名看房是否需要付费？</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-lg-4 ">
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                        <img src="Content/images/contact.png" style="width:100%;" />
+                    </div>
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                        <h1>联系我们</h1>
+                        <ul>
+                            <li><a href="javascript:void(0)" onclick="showB(9);">在线QQ：1994362676</a></li>
+                            <li><a href="javascript:void(0)" onclick="showB(10);">微信：淘安居（taoanjufc）</a></li>
+                            <li><a href="javascript:void(0)" onclick="showB(11);">新浪微博：淘安居</a></li>
+                            <li><a href="javascript:void(0)" onclick="showB(12);">邮箱：taoanjubj@qq.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--全屏遮罩-->
+    <div id="mask"></div>
+
+    <!--返回顶部-->
+    <div id="back">
+        <a href="javascript:void(0);" id="btnBack" class="bglink">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </a>
+        <a href="tel:4000686555" id="btnTel" class="bglink">
+            <span class="glyphicon glyphicon-earphone"></span>
+        </a>
+    </div>
+
+    <!--顶部弹窗-->
+    <div id="alert" class="navbar-fixed-top">
+        <div class="row">
+            <div id="alertContent" class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
+            </div>
+            <a href="javascript:void(0);" class="col-lg-2 col-md-2 col-sm-12 col-xs-12" onclick="javascript: closeWin('#alert');"><span id="btnAlertClose" class="glyphicon glyphicon-remove-circle"></span></a>
+        </div>
+    </div>
+
+    <!--底部漂浮导航-->
+    <!--<div id="floatMenu" style="position:fixed;bottom:0;left:0;">
+        <div class="circle">
+            <div class="ring">
+                <a href="" class="menuItem fa fa-home fa-2x"></a>
+                <a href="" class="menuItem fa fa-comment fa-2x"></a>
+                <a href="" class="menuItem fa fa-play fa-2x"></a>
+                <a href="" class="menuItem fa fa-camera fa-2x"></a>
+                <a href="" class="menuItem fa fa-music fa-2x"></a>
+                <a href="" class="menuItem fa fa-user fa-2x"></a>
+                <a href="" class="menuItem fa fa-trash-o fa-2x"></a>
+                <a href="" class="menuItem fa fa-star fa-2x"></a>
+            </div>
+            <a href="#" class="center fa fa-th fa-2x"></a>
+        </div>
+    </div>-->
+    <!--脚本-->
+    <script src="Content/Scripts/jquery-1.11.0.min.js?v=1"></script>
+    <script src="Content/bootstrap/js/bootstrap.min.js?v=1"></script>
+    <!--<script src="Content/slider/js/jquery.flexslider-min.js"></script>-->
+    <script src="Content/lightbox/js/lightbox.min.js?v=1"></script>
+    <!--腾讯地图-->
+    <script charset="utf-8" src="http://map.qq.com/api/js?v=2.exp&key=U4VBZ-JNCWS-3UAOT-6L63F-IPEMO-V4BYN"></script>
+
+    <script src="Content/Scripts/common.js?v=1"></script>
+    <script src="Content/Scripts/detail.js?v=1"></script>
+
+</body>
+</html>
