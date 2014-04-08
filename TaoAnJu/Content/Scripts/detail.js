@@ -12,7 +12,9 @@
             var data = $.parseJSON(result);
             if (data.html) {
                 $("#tableinfo").html(data.html);
-                initMap();
+                if (data.Location) {
+                    initMap(data.Location);
+                }
             }
             if (data.ItemName) {
                 $("#title").text(data.ItemName);
@@ -54,7 +56,7 @@
 });
 
 //初始化地图
-function initMap() {
+function initMap(addr) {
     var map = new qq.maps.Map(document.getElementById("qqmap"),
     {
         center: new qq.maps.LatLng(39.914850, 116.403765),
@@ -63,6 +65,26 @@ function initMap() {
         scrollwheel: true,
         disableDoubleClickZoom: true
     });
+
+    var callbacks = {
+        //若服务请求成功，则运行以下函数，并将结果传入
+        complete: function (result) {
+            map.setCenter(result.detail.location);
+            var marker = new qq.maps.Marker({
+                map: map,
+                position: result.detail.location
+            });
+        },
+        //若服务请求失败，则运行以下函数
+        error: function () {
+            console.error("地图定位出错");
+        }
+    }
+    //创建类实例
+    geocoder = new qq.maps.Geocoder(callbacks);
+    //地址解析
+    //geocoder.getLocation("中国,北京,海淀区,海淀大街38号");
+    geocoder.getLocation(addr);
 
     //var pano_container = document.getElementById('qqmap');  //街景容器
     //var pano = new qq.maps.Panorama(pano_container, {

@@ -181,6 +181,15 @@ public class MyHandler : IHttpHandler
             StringBuilder sb = new StringBuilder();
             foreach (DataRow dr in dt.Rows)
             {
+                string picPath = "";
+                if (string.IsNullOrEmpty(dr["vc_PicFile2"].ToString()))
+                {
+                    picPath = "Content/images/weixin.jpg";
+                }
+                else
+                {
+                    picPath = LoadThumbnailPath + dr["vc_PicFile2"];
+                }
                 string htmls = string.Format(@"<div class='card row'>
                 <div class='picDiv col-lg-3 col-md-3 col-sx-3 col-xs-9' style='margin-bottom:10px;'>
                     <a href='detail.html?id={0}' target='_blank'><img src='{1}' style='width:100%;' /></a>
@@ -217,7 +226,7 @@ public class MyHandler : IHttpHandler
                     </table>
                     <button class='btnBuy btn btn-success btn-lg' title='{0}'><span class='glyphicon glyphicon-home'>&nbsp;</span>{9}，立即拥有！</button>
                 </div>
-            </div>", dr["int_ItemId"].ToString(), LoadThumbnailPath + dr["vc_PicFile2"], "", dr["vc_ItemName"], dr["vc_Location"], dr["vc_SalesLocation"], dr["int_PropertyRight"], dr["dt_OpeningTime"], dr["dec_ReferencePrice"], dr["vc_Discount"]);
+            </div>", dr["int_ItemId"].ToString(), picPath, "", dr["vc_ItemName"], dr["vc_Location"], dr["vc_SalesLocation"], dr["int_PropertyRight"], dr["dt_OpeningTime"], dr["dec_ReferencePrice"], dr["vc_Discount"]);
                 sb.Append(htmls);
             }
 
@@ -479,30 +488,27 @@ public class MyHandler : IHttpHandler
                                     </tr>
                                 </thead>
                                 <tr>
+                                    <th colspan='2'>
+                                        楼盘位置，见地图：
+                                    </th>
+                                </tr>
+                                <tr>
                                     <td colspan='2'>
                                         <div id='qqmap'></div>
                                     </td>
                                 </tr>
-                                <tr>
-                                   <td colspan='2'>{0}</td>
-                                </tr>
-
+                                <tr><th>交通信息</th><td>{0}</td></tr>
+                                <tr><th>周边配套</th><td>{1}</td></tr>
                             </table>
                         </div>
-                    </div>", Traffic));
-
-                //                <tr>
-                //                    <td colspan='2'>{1}</td>
-                //                </tr>
-                //                <tr><th>学校</th><td>{2}</td></tr>
-                //                <tr><th>购物</th><td>{3}</td></tr>
-                //                <tr><th>生活</th><td>{4}</td></tr>
+                    </div>", Traffic, ConfigureInfo));
 
                 Result.Set("PicFile1", PicFile1);
                 Result.Set("html", sb.ToString());
                 Result.Set("ItemName", ItemName);
                 Result.Set("Discount", Discount + "，立即拥有！");
                 Result.Set("Hotline", Hotline);
+                Result.Set("Location", Location);
 
                 //获取项目视频
                 initViewInfo(ref Result);
