@@ -43,10 +43,10 @@ public partial class admin_RegInfo_List : CAdminCookiePage
         {
             strFilter += " and vc_ItemName ='" + Request["iname"] + "'";
         }
-        string sql = "SELECT count(*) FROM tb_RegInfo where " + strFilter;
+        string sql = "SELECT count(*) FROM v_RegInfo where " + strFilter;
         dt = db.ExecuteQuery(sql).Tables[0];
         RecordCount = (int)dt.Rows[0][0];
-        dt = RiSystem.CurrentDataPage(db, "tb_RegInfo", strFields, strFilter, PageNumBar1.PageSize, PageNum, "int_RId", false);
+        dt = RiSystem.CurrentDataPage(db, "v_RegInfo", strFields, strFilter, PageNumBar1.PageSize, PageNum, "int_RId", false);
 
         PageNumBar1.CurrPage = PageNum;
         PageNumBar1.RecordCount = RecordCount;

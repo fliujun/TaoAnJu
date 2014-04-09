@@ -27,6 +27,7 @@
             }
             if (data.Hotline) {
                 $("#Hotline").append("咨询热线：<a href='tel:" + data.Hotline + "'>&nbsp;" + data.Hotline + "</a>");
+                $("#btnTel").attr("href","tel:"+data.Hotline);
             }
             if (data.vedio) {
                 var str = "";

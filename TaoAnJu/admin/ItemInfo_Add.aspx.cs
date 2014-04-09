@@ -130,7 +130,7 @@ public partial class admin_ItemInfo_Add : CAdminCookiePage
         }
         //^[0-9]*[1-9][0-9]*$　　//匹配正整数 
         //匹配正浮点数
-        Regex re = new Regex(@"^[0-9]+(.[0-9]{3})?$");
+        Regex re = new Regex(@"^[0-9]+\.{0,1}[0-9]{0,3}$");
         if (!string.IsNullOrEmpty(txt_PropertyRight.Text.Trim()) && !re.IsMatch(txt_PropertyRight.Text.Trim()))
         {
             lit_Msg.Text = "错误提示：产权年限请输入数字！";
@@ -163,7 +163,7 @@ public partial class admin_ItemInfo_Add : CAdminCookiePage
         }
         if (!string.IsNullOrEmpty(txt_VolumeRate.Text.Trim()) && !re.IsMatch(txt_VolumeRate.Text.Trim()))
         {
-            lit_Msg.Text = "错误提示：容积率请输入数字，前台页面显示会自动转换为百分比！";
+            lit_Msg.Text = "错误提示：容积率请输入数字！";
             txt_VolumeRate.Text = "";
             return;
         }
@@ -313,6 +313,7 @@ public partial class admin_ItemInfo_Add : CAdminCookiePage
                 {
                     obj.vc_PicFile2 = obj.vc_PicFile1;
                 }
+                RiSystem.DelItemFile(db, txt_ItemId.Text, true);
             }
             if (txt_ItemId.Text == "")
             {
@@ -323,7 +324,6 @@ public partial class admin_ItemInfo_Add : CAdminCookiePage
             }
             else
             {
-                RiSystem.DelItemFile(db, txt_ItemId.Text, true);
                 obj.int_ItemId = Convert.ToInt32(txt_ItemId.Text);
                 objo.Update(obj);
                 RiSystem.AddLog(db, "修改", LoginInfo.RealName + "进行 房产项目 修改操作，相关编号为：" + obj.int_ItemId.ToString(), Request.UserHostAddress, LoginInfo.UserId);
