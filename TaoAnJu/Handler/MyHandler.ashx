@@ -224,7 +224,7 @@ public class MyHandler : IHttpHandler
                             <td>{8}</td>
                         </tr>
                     </table>
-                    <button class='btnBuy btn btn-success btn-lg' title='{0}'><span class='glyphicon glyphicon-home'>&nbsp;</span>{9}，立即拥有！</button>
+                    <button class='btnBuy btn btn-success btn-lg' title='{0}'><span class='glyphicon glyphicon-home'>&nbsp;</span>{9}</button>
                 </div>
             </div>", dr["int_ItemId"].ToString(), picPath, "", dr["vc_ItemName"], dr["vc_Location"], dr["vc_SalesLocation"], dr["int_PropertyRight"], dr["dt_OpeningTime"], dr["dec_ReferencePrice"], dr["vc_Discount"]);
                 sb.Append(htmls);
@@ -506,7 +506,7 @@ public class MyHandler : IHttpHandler
                 Result.Set("PicFile1", PicFile1);
                 Result.Set("html", sb.ToString());
                 Result.Set("ItemName", ItemName);
-                Result.Set("Discount", Discount + "，立即拥有！");
+                Result.Set("Discount", Discount);
                 Result.Set("Hotline", Hotline);
                 Result.Set("Location", Location);
 
