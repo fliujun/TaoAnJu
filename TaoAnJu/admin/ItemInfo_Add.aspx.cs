@@ -82,12 +82,24 @@ public partial class admin_ItemInfo_Add : CAdminCookiePage
                     txt_OpeningTime.Text = (!obj.dt_OpeningTimeNull) ? obj.dt_OpeningTime.ToString("yyyy-MM-dd") : "";
                     txt_Order.Text = (!obj.int_OrderNull && obj.int_Order > 0) ? obj.int_Order.ToString() : "";
                     txt_ParkingSpace.Text = obj.vc_ParkingSpace.ToString();
+                    string url = Request.Url.AbsolutePath;
+                    url = url.Substring(0, url.IndexOf("admin"));
                     if (!string.IsNullOrEmpty(obj.vc_PicFile1))
                     {
-                        string url = Request.Url.AbsolutePath;
-                        url = url.Substring(0, url.IndexOf("admin"));
-                        lit_Pic.Text = "图片文件：<a href =\"" + url + LoadFilePath.Replace("\\", "/") + obj.vc_PicFile1.ToString() + "\" target=\"_blank\"><font color=\"red\">查看大图</font></a>";
-                        lit_Pic.Text += "&nbsp;&nbsp;<a href =\"" + url + LoadThumbnailPath.Replace("\\", "/") + obj.vc_PicFile2.ToString() + "\" target=\"_blank\"><font color=\"blue\">查看缩略图</font></a>";
+                        txt_PicFile1.Text = obj.vc_PicFile1.ToString();
+                        txt_Thumb1.Text = obj.vc_Thumb1.ToString ();
+                        lit_Pic1.Text = "图片1文件：<a href =\"" + url + LoadFilePath.Replace("\\", "/") + obj.vc_PicFile1.ToString() + "\" target=\"_blank\"><font color=\"red\">查看图1</font></a>";
+                        lit_Pic1.Text += "&nbsp;&nbsp;<a href =\"" + url + LoadThumbnailPath.Replace("\\", "/") + obj.vc_Thumb1.ToString() + "\" target=\"_blank\"><font color=\"blue\">查看图1缩略图</font></a>";
+                    }
+                    if (!string.IsNullOrEmpty(obj.vc_PicFile2))
+                    {
+                        txt_PicFile2.Text = obj.vc_PicFile2.ToString();
+                        lit_Pic2.Text = "图片2文件：<a href =\"" + url + LoadFilePath.Replace("\\", "/") + obj.vc_PicFile2.ToString() + "\" target=\"_blank\"><font color=\"red\">查看图2</font></a>";
+                    }
+                    if (!string.IsNullOrEmpty(obj.vc_PicFile3))
+                    {
+                        txt_PicFile3.Text = obj.vc_PicFile3.ToString();
+                        lit_Pic3.Text = "图片3文件：<a href =\"" + url + LoadFilePath.Replace("\\", "/") + obj.vc_PicFile3.ToString() + "\" target=\"_blank\"><font color=\"red\">查看图3</font></a>";
                     }
                     txt_ProjectFeatures.Text = obj.vc_ProjectFeatures.ToString();
                     txt_PropertyCompany.Text = obj.vc_PropertyCompany.ToString();
@@ -288,32 +300,69 @@ public partial class admin_ItemInfo_Add : CAdminCookiePage
                 obj.dt_OpeningTime = Convert.ToDateTime(txt_OpeningTime.Text.Trim());
             }
             obj.dt_UpdateTime = DateTime.Now;
+            string destDir = System.Web.HttpContext.Current.Server.MapPath(LoadFilePath).Replace("admin\\", "");
             if (FileUpload1.HasFile)
             {
-                string destDir = System.Web.HttpContext.Current.Server.MapPath(LoadFilePath).Replace("admin\\", "");
-                string FileName = RiSystem.FormatUpLoadFileName("item", FileUpload1.FileName);
+                string FileName = RiSystem.FormatUpLoadFileName("item_1_", FileUpload1.FileName);
                 Boolean IsUpLoad = RiSystem.UpLoadFile(destDir + FileName, FileUpload1.PostedFile);
                 if (!IsUpLoad)
                 {
-                    lit_Msg.Text = "错误提示：图片上传失败，请重新提交！";
+                    lit_Msg.Text = "错误提示：图片1上传失败，请重新提交！";
                     return;
                 }
                 obj.vc_PicFile1 = FileName;
+                if (txt_PicFile1.Text != "")
+                {
+                    RiSystem.DelFile(destDir+txt_PicFile1.Text);
+                }
                 string[] ThumbnailSize1 = System.Configuration.ConfigurationManager.AppSettings["ThumbnailSize1"].Split(',');
                 int dwidth = Convert.ToInt32(ThumbnailSize1[0]);
                 int dheight = Convert.ToInt32(ThumbnailSize1[1]);
-                destDir = System.Web.HttpContext.Current.Server.MapPath(LoadThumbnailPath).Replace("admin\\", "");
+                string destDir2 = System.Web.HttpContext.Current.Server.MapPath(LoadThumbnailPath).Replace("admin\\", "");
                 FileName = RiSystem.FormatUpLoadFileName("thumb", FileUpload1.FileName);
-                IsUpLoad=RiSystem.UpLoadThumbnail(destDir+FileName, FileUpload1.PostedFile, dwidth, dheight);
+                IsUpLoad=RiSystem.UpLoadThumbnail(destDir2+FileName, FileUpload1.PostedFile, dwidth, dheight);
                 if (IsUpLoad)
                 {
-                    obj.vc_PicFile2 = FileName;
+                    obj.vc_Thumb1 = FileName;
                 }
                 else
                 {
-                    obj.vc_PicFile2 = obj.vc_PicFile1;
+                    obj.vc_Thumb1 = obj.vc_PicFile1;
                 }
-                RiSystem.DelItemFile(db, txt_ItemId.Text, true);
+                if (txt_Thumb1.Text != "")
+                {
+                    RiSystem.DelFile(destDir + txt_Thumb1.Text);
+                }
+            }
+            if (FileUpload2.HasFile)
+            {
+                string FileName = RiSystem.FormatUpLoadFileName("item_2_", FileUpload2.FileName);
+                Boolean IsUpLoad = RiSystem.UpLoadFile(destDir + FileName, FileUpload2.PostedFile);
+                if (!IsUpLoad)
+                {
+                    lit_Msg.Text = "错误提示：图片2上传失败，请重新提交！";
+                    return;
+                }
+                obj.vc_PicFile2 = FileName;
+                if (txt_PicFile2.Text != "")
+                {
+                    RiSystem.DelFile(destDir + txt_PicFile2.Text);
+                }
+            }
+            if (FileUpload3.HasFile)
+            {
+                string FileName = RiSystem.FormatUpLoadFileName("item_3_", FileUpload3.FileName);
+                Boolean IsUpLoad = RiSystem.UpLoadFile(destDir + FileName, FileUpload3.PostedFile);
+                if (!IsUpLoad)
+                {
+                    lit_Msg.Text = "错误提示：图片2上传失败，请重新提交！";
+                    return;
+                }
+                obj.vc_PicFile3 = FileName;
+                if (txt_PicFile3.Text != "")
+                {
+                    RiSystem.DelFile(destDir + txt_PicFile3.Text);
+                }
             }
             if (txt_ItemId.Text == "")
             {

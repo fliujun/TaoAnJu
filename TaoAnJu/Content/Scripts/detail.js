@@ -19,15 +19,26 @@
             if (data.ItemName) {
                 $("#title").text(data.ItemName);
             }
-            if (data.PicFile1) {
-                $("#ItemPic").html('<a href="' + data.PicFile1 + '" data-lightbox="image-1" data-title="效果图"><img src="' + data.PicFile1 + '" style="width:100%;" /></a>');
+            if (data.sliderPics) {
+                var str = "";
+                $.each(data.sliderPics, function (index, item) {
+                    str = str + '<li class="slide"><img src="' + item + '" /></li>';
+                });
+                $("#pics").html(str);
+                $('.slider').glide({
+                    animationTime: 500, //动画过度效果，只有当浏览器支持CSS3的时候生效
+                    arrows: false, //是否显示左右导航器
+                });
             }
             if (data.Discount) {
                 $("#btnApply").text(data.Discount);
             }
             if (data.Hotline) {
-                $("#Hotline").append("咨询热线：<a href='tel:" + data.Hotline + "'>&nbsp;" + data.Hotline + "</a>");
+                $("#Hotline").append("咨询热线：<a href='tel:" + data.Hotline + "'>&nbsp;<label style='color:green;'>" + data.Hotline + "</label></a>");
                 $("#btnTel").attr("href","tel:"+data.Hotline);
+            }
+            if (data.ReferencePrice) {
+                $("#ReferencePrice").html("<label style='font-size:18px;'>当前均价</label><label style='color:red;'>" + data.ReferencePrice+"</label>");
             }
             if (data.vedio) {
                 var str = "";
@@ -40,11 +51,11 @@
             if (data.pics) {
                 var str = "";
                 $.each(data.pics, function (index, data) {
-                    str = str + '<div class="pic"><div class="pic-title">' + data[0].vc_PicType + '</div><div class="row">';
+                    str = str + '<div class="picRow"><div class="pic-title">' + data[0].vc_PicType + '</div><div class="row">';
                     $.each(data, function (i, obj) {
                         str = str + '<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">' +
                                         '<a href="' + obj.vc_PicFile + '" data-lightbox="itempic" data-title="' + obj.vc_PicType + ' / ' + obj.vc_PicDesc + '">' +
-                                            '<img src="' + obj.vc_Pic1 + '" />' +
+                                            '<img src="' + obj.vc_Pic1 + '"/>' +
                                         '</a>' +
                                     '</div>';
                     });

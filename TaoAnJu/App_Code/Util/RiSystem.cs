@@ -437,14 +437,13 @@ namespace TaoAnJu.Util
         /// </summary>
         /// <param name="db"></param>
         /// <param name="idList"></param>
-        /// <param name="IsUpdate">为否时删除整个项目所有文件</param>
-        public static void DelItemFile(DsConnectionDB db, string idList, bool IsUpdate)
+        public static void DelItemFile(DsConnectionDB db, string idList)
         {
             string LoadFilePath = System.Configuration.ConfigurationManager.AppSettings["LoadFilePath"];
             LoadFilePath = System.Web.HttpContext.Current.Server.MapPath(LoadFilePath).Replace("admin\\", "");
             string LoadThumbnailPath = System.Configuration.ConfigurationManager.AppSettings["LoadThumbnailPath"];
             LoadThumbnailPath = System.Web.HttpContext.Current.Server.MapPath(LoadThumbnailPath).Replace("admin\\", "");
-            string sql = "select int_ItemId,vc_PicFile1,vc_PicFile2 from tb_ItemInfo where int_ItemId in(" + idList + ")";
+            string sql = "select int_ItemId,vc_PicFile1,vc_Thumb1,vc_PicFile2,vc_PicFile3 from tb_ItemInfo where int_ItemId in(" + idList + ")";
             DataTable dt = db.ExecuteQuery(sql).Tables[0];
             for (int i = 0; i < dt.Rows.Count; i++)
             {
@@ -456,13 +455,20 @@ namespace TaoAnJu.Util
                 filename = dt.Rows[i]["vc_PicFile2"].ToString();
                 if (filename != "")
                 {
+                    DelFile(LoadFilePath + filename);
+                }
+                filename = dt.Rows[i]["vc_PicFile3"].ToString();
+                if (filename != "")
+                {
+                    DelFile(LoadFilePath + filename);
+                }
+                filename = dt.Rows[i]["vc_Thumb1"].ToString();
+                if (filename != "")
+                {
                     DelFile(LoadThumbnailPath + filename);
                 }
-                if (!IsUpdate)
-                {
-                    DelDirectory(LoadFilePath + dt.Rows[i]["int_ItemId"] + "\\");
-                    DelDirectory(LoadThumbnailPath + dt.Rows[i]["int_ItemId"] + "\\");
-                }
+                DelDirectory(LoadFilePath + dt.Rows[i]["int_ItemId"] + "\\");
+                DelDirectory(LoadThumbnailPath + dt.Rows[i]["int_ItemId"] + "\\");
             }
         }
         /// <summary>

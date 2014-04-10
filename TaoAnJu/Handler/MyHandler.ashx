@@ -139,7 +139,7 @@ public class MyHandler : IHttpHandler
             string LoadThumbnailPath = System.Configuration.ConfigurationManager.AppSettings["LoadThumbnailPath"];
             //显示字段，分别是项目编号，项目名称，楼盘地址，售楼地址，开盘时间，价格，图片缩略图
             //string strFields = "int_ItemId,vc_ItemName,vc_Location,vc_SalesLocation,dt_OpeningTime,dec_ReferencePrice," + LoadThumbnailPath.Replace("\\", "/") + "+vc_PicFile2 as vc_PicFile2";
-            string strFields = "int_ItemId,vc_ItemName,int_PropertyRight,vc_Location,vc_SalesLocation,dt_OpeningTime,dec_ReferencePrice,vc_PicFile2,vc_Discount";
+            string strFields = "int_ItemId,vc_ItemName,int_PropertyRight,vc_Location,vc_SalesLocation,dt_OpeningTime,dec_ReferencePrice,vc_Thumb1,vc_Discount";
 
             //查询条件，必须是状态为1，付费项目永远显示
             StringBuilder strFilter = new StringBuilder();
@@ -182,13 +182,13 @@ public class MyHandler : IHttpHandler
             foreach (DataRow dr in dt.Rows)
             {
                 string picPath = "";
-                if (string.IsNullOrEmpty(dr["vc_PicFile2"].ToString()))
+                if (string.IsNullOrEmpty(dr["vc_Thumb1"].ToString()))
                 {
                     picPath = "Content/images/weixin.jpg";
                 }
                 else
                 {
-                    picPath = LoadThumbnailPath + dr["vc_PicFile2"];
+                    picPath = LoadThumbnailPath + dr["vc_Thumb1"];
                 }
                 string htmls = string.Format(@"<div class='card row'>
                 <div class='picDiv col-lg-3 col-md-3 col-sx-3 col-xs-9' style='margin-bottom:10px;'>
@@ -304,6 +304,9 @@ public class MyHandler : IHttpHandler
             {
                 //项目主图
                 string PicFile1 = LoadFilePath.Replace("\\", "/") + obj.vc_PicFile1.ToString();
+                string PicFile2 = LoadFilePath.Replace("\\", "/") + obj.vc_PicFile2.ToString();
+                string PicFile3 = LoadFilePath.Replace("\\", "/") + obj.vc_PicFile3.ToString();
+                
                 //所在区域
                 string Area = obj.vc_Area.ToString();
                 //建筑设计
@@ -502,13 +505,17 @@ public class MyHandler : IHttpHandler
                             </table>
                         </div>
                     </div>", Traffic, ConfigureInfo));
-
-                Result.Set("PicFile1", PicFile1);
+                List<string> sliderPics = new List<string>();
+                sliderPics.Add(PicFile1);
+                sliderPics.Add(PicFile2);
+                sliderPics.Add(PicFile3);
+                Result.Set("sliderPics", sliderPics);
                 Result.Set("html", sb.ToString());
                 Result.Set("ItemName", ItemName);
                 Result.Set("Discount", Discount);
                 Result.Set("Hotline", Hotline);
                 Result.Set("Location", Location);
+                Result.Set("ReferencePrice", ReferencePrice);
 
                 //获取项目视频
                 initViewInfo(ref Result);

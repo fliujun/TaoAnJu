@@ -12,7 +12,7 @@
     <script language="javascript" type="text/javascript" src="My97DatePicker/WdatePicker.js"></script>
 </head>
 <body style="margin: 0px">
-    <form id="form1" runat="server">
+    <form id="form1" runat="server" enctype="multipart/form-data">
     <div class="content-box" id="BodyDiv">
 	    <div class="content-box-content10">
 			<table cellspacing="0" cellpadding="0" width="100%" border="0" style="background-color: #Ffffff; width: 100%;">
@@ -36,14 +36,14 @@
                 <tr><td align="right" style="width: 80px; background-color: #EBEBEB;">楼盘地址：</td>
                 <td>   
                        <asp:TextBox ID="txt_Location" runat="server" MaxLength="80" Width="196px" 
-                           TextMode="MultiLine" Height="80px"></asp:TextBox> 
+                           TextMode="MultiLine" Height="60px"></asp:TextBox> 
                  </td><td align="right" style="width: 80px; background-color: #EBEBEB;">项目特色：</td>
                 <td>   
                        <asp:TextBox ID="txt_ProjectFeatures" runat="server" MaxLength="80" Width="156px" 
-                           TextMode="MultiLine" Height="80px"></asp:TextBox> 
+                           TextMode="MultiLine" Height="60px"></asp:TextBox> 
                  </td><td align="right" style="width: 80px; background-color: #EBEBEB;">楼盘简介：</td><td align="left" colspan="3">
                        <asp:TextBox ID="txt_Introduction" runat="server" MaxLength="2000" Width="98%" 
-                        TextMode="MultiLine" Height="80px"></asp:TextBox> </td></tr>
+                        TextMode="MultiLine" Height="60px"></asp:TextBox> </td></tr>
                
                <tr><td align="right" style="width: 80px; background-color: #EBEBEB;">开发商：</td>
                 <td>   
@@ -155,14 +155,22 @@
                  <tr><td align="right" style="width: 80px; background-color: #EBEBEB;">交通出行：</td>
                 <td colspan="3">   
                        <asp:TextBox ID="txt_Traffic" runat="server" MaxLength="2000" Width="98%" 
-                           TextMode="MultiLine" Height="190px"></asp:TextBox> </td>
+                           TextMode="MultiLine" Height="180px"></asp:TextBox> </td>
                 <td align="right" style="width: 80px; background-color: #EBEBEB;">配套信息：</td><td align="left" colspan="3">
                        <asp:TextBox ID="txt_ConfigureInfo" runat="server" MaxLength="2000" Width="98%" 
-                        TextMode="MultiLine" Height="190px"></asp:TextBox> </td></tr>
-                <tr><td align="right" style="width: 80px; background-color: #EBEBEB;">明细主图：
+                        TextMode="MultiLine" Height="180px"></asp:TextBox> </td></tr>
+                <tr><td align="right" style="width: 80px; background-color: #EBEBEB;">明细图1：
                     </td><td colspan="7"><asp:FileUpload ID="FileUpload1" runat="server" />
-                        <asp:Literal ID="lit_Pic" runat="server"></asp:Literal>
+                        <asp:Literal ID="lit_Pic1" runat="server"></asp:Literal>
                     </td></tr>
+                <tr><td align="right" style="width: 80px; background-color: #EBEBEB;">明细图2：</td><td colspan="3">
+                    <asp:FileUpload ID="FileUpload2" runat="server" />
+                        <asp:Literal ID="lit_Pic2" runat="server"></asp:Literal>
+                    </td><td align="right" style="width: 80px; background-color: #EBEBEB;">明细图3：</td><td colspan="3">
+                    <asp:FileUpload ID="FileUpload3" runat="server" />
+                        <asp:Literal ID="lit_Pic3" runat="server"></asp:Literal>
+                    </td>
+                </tr>
                 <tr><td align="right" style="width: 80px; background-color: #EBEBEB;">销售状态：</td>
                 <td>   
                     <asp:DropDownList ID="ddl_SalesStatus" runat="server" Width="200px">
@@ -198,7 +206,14 @@
                 </td></tr>
             </table>
             <asp:TextBox ID="txt_ItemId" runat="server" BorderStyle="None" 
-        Height="0px" Width="0px"></asp:TextBox>
+        Height="0px" Width="0px"></asp:TextBox><asp:TextBox ID="txt_PicFile1" 
+        runat="server" BorderStyle="None" 
+        Height="0px" Width="0px" Visible="False"></asp:TextBox><asp:TextBox ID="txt_Thumb1" runat="server" BorderStyle="None" 
+        Height="0px" Width="0px"></asp:TextBox><asp:TextBox ID="txt_PicFile2" 
+        runat="server" BorderStyle="None" 
+        Height="0px" Width="0px" Visible="False"></asp:TextBox>
+    <asp:TextBox ID="txt_PicFile3" runat="server" BorderStyle="None" 
+        Height="0px" Width="0px" Visible="False"></asp:TextBox>
             <asp:Literal ID="lit_Script" runat="server"></asp:Literal> 
     <script type ="text/javascript">
         document.getElementById("BodyDiv").style.height = document.documentElement.clientHeight - 45 + "px";

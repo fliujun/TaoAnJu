@@ -45,7 +45,7 @@ public partial class admin_Msg :CAdminCookiePage
                 //删除对应项目的图片
                 if (ui.OpType == "删除" && ui.ModelName == "房产项目")
                 {
-                    RiSystem.DelItemFile(db, ui.IdList, false);
+                    RiSystem.DelItemFile(db, ui.IdList);
                 }
                 db.ExecuteNonQuery(ui.OpSql);
                 

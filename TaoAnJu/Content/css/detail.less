@@ -1,8 +1,9 @@
 ﻿@import "common.min.css";
+@import "../glide/css/style.css";
 
 @themeLight: #7d0044; //亮红色
 @lineGray: #b0afb0; //灰色线条
-@hoverYellow: #ffcc00; //黄色
+@hoverYellow: #f08200; //黄色
 @deepGray: #333237; //深灰
 @searchHeight: 35px;
 @searchTop: 120px;
@@ -43,11 +44,12 @@ header {
     }
 }
 
-#Hotline {
+#titleDes {
     margin-top: 10px;
     font-size: 14px;
     font-family:Microsoft Yahei;
     font-weight: bold;
+    overflow:auto;
 
     a {
         color:#8a6d3b;
@@ -83,8 +85,13 @@ article {
         font-family: Microsoft Yahei;
     }
 
-    .pic {
+    .picRow {
         margin: 30px 0;
+
+        img {
+            margin-bottom:10px;
+            width:100%;
+        }
     }
 
     .pic-title {
@@ -96,10 +103,14 @@ article {
         margin-bottom: 10px;
     }
 
-    #itemPics {
+    #ItemPic {
         img {
+            margin: 0 -40px;
             width: 100%;
-            margin-bottom: 10px;
+        }
+
+        a {
+            text-decoration: none;
         }
     }
 
@@ -110,13 +121,23 @@ article {
 
     #baoming {
         margin-top: 20px;
-        background: #ffcc00;
+        background: @hoverYellow;
         padding: 30px;
         box-shadow: 1px 1px 5px #808080;
-        overflow:hidden;
+        overflow: hidden;
 
         input {
             border: 0;
+        }
+
+        label {
+            color: white;
+        }
+
+        #btnApply {
+            font-family: 'Microsoft Yahei';
+            font-weight: bold;
+            margin-top: 30px;
         }
     }
 

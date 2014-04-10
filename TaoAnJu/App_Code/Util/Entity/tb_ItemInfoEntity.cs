@@ -52,7 +52,9 @@ namespace TaoAnJu.Util
         private string _vc_Traffic;
         private string _vc_ConfigureInfo;
         private string _vc_PicFile1;
+        private string _vc_Thumb1;
         private string _vc_PicFile2;
+        private string _vc_PicFile3;
         private string _vc_SalesStatus;
         private DateTime _dt_UpdateTime;
         private bool _dt_UpdateTimeNull = true;
@@ -526,7 +528,7 @@ namespace TaoAnJu.Util
             set { _vc_ConfigureInfo = value; }
         }
         /// <summary>
-        /// 属性 <c>显示图片</c>.
+        /// 属性 <c>图片1</c>.
         /// </summary>
         /// <value>对应表中<c>vc_PicFile1</c>字段的值</value>
         public string vc_PicFile1
@@ -535,13 +537,31 @@ namespace TaoAnJu.Util
             set { _vc_PicFile1 = value; }
         }
         /// <summary>
-        /// 属性 <c>略缩图</c>.
+        /// 属性 <c>图片1略缩图</c>.
+        /// </summary>
+        /// <value>对应表中<c>vc_Thumb1</c>字段的值</value>
+        public string vc_Thumb1
+        {
+            get { return _vc_Thumb1; }
+            set { _vc_Thumb1 = value; }
+        }
+        /// <summary>
+        /// 属性 <c>图片2</c>.
         /// </summary>
         /// <value>对应表中<c>vc_PicFile2</c>字段的值</value>
         public string vc_PicFile2
         {
             get { return _vc_PicFile2; }
             set { _vc_PicFile2 = value; }
+        }
+        /// <summary>
+        /// 属性 <c>图片3</c>.
+        /// </summary>
+        /// <value>对应表中<c>vc_PicFile3</c>字段的值</value>
+        public string vc_PicFile3
+        {
+            get { return _vc_PicFile3; }
+            set { _vc_PicFile3 = value; }
         }
         /// <summary>
         /// 属性 <c>销售状态</c>.

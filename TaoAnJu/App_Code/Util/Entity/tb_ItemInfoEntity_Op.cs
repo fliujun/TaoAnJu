@@ -157,8 +157,12 @@ namespace TaoAnJu.Util
                 sqlStr += "vc_ConfigureInfo,";
             if (null != value.vc_PicFile1)
                 sqlStr += "vc_PicFile1,";
+            if (null != value.vc_Thumb1)
+                sqlStr += "vc_Thumb1,";
             if (null != value.vc_PicFile2)
                 sqlStr += "vc_PicFile2,";
+            if (null != value.vc_PicFile3)
+                sqlStr += "vc_PicFile3,";
             if (null != value.vc_SalesStatus)
                 sqlStr += "vc_SalesStatus,";
             if (!value.dt_UpdateTimeNull)
@@ -249,8 +253,12 @@ namespace TaoAnJu.Util
                 sqlStr += "@vc_ConfigureInfo,";
             if (null != value.vc_PicFile1)
                 sqlStr += "@vc_PicFile1,";
+            if (null != value.vc_Thumb1)
+                sqlStr += "@vc_Thumb1,";
             if (null != value.vc_PicFile2)
                 sqlStr += "@vc_PicFile2,";
+            if (null != value.vc_PicFile3)
+                sqlStr += "@vc_PicFile3,";
             if (null != value.vc_SalesStatus)
                 sqlStr += "@vc_SalesStatus,";
             if (!value.dt_UpdateTimeNull)
@@ -342,8 +350,12 @@ namespace TaoAnJu.Util
                 AddParameter(cmd, "vc_ConfigureInfo", value.vc_ConfigureInfo);
             if (null != value.vc_PicFile1)
                 AddParameter(cmd, "vc_PicFile1", value.vc_PicFile1);
+            if (null != value.vc_Thumb1)
+                AddParameter(cmd, "vc_Thumb1", value.vc_Thumb1);
             if (null != value.vc_PicFile2)
                 AddParameter(cmd, "vc_PicFile2", value.vc_PicFile2);
+            if (null != value.vc_PicFile3)
+                AddParameter(cmd, "vc_PicFile3", value.vc_PicFile3);
             if (null != value.vc_SalesStatus)
                 AddParameter(cmd, "vc_SalesStatus", value.vc_SalesStatus);
             if (!value.dt_UpdateTimeNull)
@@ -446,8 +458,12 @@ namespace TaoAnJu.Util
                 sqlStr += "vc_ConfigureInfo=@vc_ConfigureInfo,";
             if (null != value.vc_PicFile1)
                 sqlStr += "vc_PicFile1=@vc_PicFile1,";
+            if (null != value.vc_Thumb1)
+                sqlStr += "vc_Thumb1=@vc_Thumb1,";
             if (null != value.vc_PicFile2)
                 sqlStr += "vc_PicFile2=@vc_PicFile2,";
+            if (null != value.vc_PicFile3)
+                sqlStr += "vc_PicFile3=@vc_PicFile3,";
             if (null != value.vc_SalesStatus)
                 sqlStr += "vc_SalesStatus=@vc_SalesStatus,";
             if (!value.dt_UpdateTimeNull)
@@ -541,8 +557,12 @@ namespace TaoAnJu.Util
                 AddParameter(cmd, "vc_ConfigureInfo", value.vc_ConfigureInfo);
             if (null != value.vc_PicFile1)
                 AddParameter(cmd, "vc_PicFile1", value.vc_PicFile1);
+            if (null != value.vc_Thumb1)
+                AddParameter(cmd, "vc_Thumb1", value.vc_Thumb1);
             if (null != value.vc_PicFile2)
                 AddParameter(cmd, "vc_PicFile2", value.vc_PicFile2);
+            if (null != value.vc_PicFile3)
+                AddParameter(cmd, "vc_PicFile3", value.vc_PicFile3);
             if (null != value.vc_SalesStatus)
                 AddParameter(cmd, "vc_SalesStatus", value.vc_SalesStatus);
             if (!value.dt_UpdateTimeNull)
@@ -677,7 +697,9 @@ namespace TaoAnJu.Util
             int vc_TrafficColumnIndex = reader.GetOrdinal("vc_Traffic");
             int vc_ConfigureInfoColumnIndex = reader.GetOrdinal("vc_ConfigureInfo");
             int vc_PicFile1ColumnIndex = reader.GetOrdinal("vc_PicFile1");
+            int vc_Thumb1ColumnIndex = reader.GetOrdinal("vc_Thumb1");
             int vc_PicFile2ColumnIndex = reader.GetOrdinal("vc_PicFile2");
+            int vc_PicFile3ColumnIndex = reader.GetOrdinal("vc_PicFile3");
             int vc_SalesStatusColumnIndex = reader.GetOrdinal("vc_SalesStatus");
             int dt_UpdateTimeColumnIndex = reader.GetOrdinal("dt_UpdateTime");
             int dt_CreateDateColumnIndex = reader.GetOrdinal("dt_CreateDate");
@@ -771,8 +793,12 @@ namespace TaoAnJu.Util
                         record.vc_ConfigureInfo = Convert.ToString(reader.GetValue(vc_ConfigureInfoColumnIndex));
                     if (!reader.IsDBNull(vc_PicFile1ColumnIndex))
                         record.vc_PicFile1 = Convert.ToString(reader.GetValue(vc_PicFile1ColumnIndex));
+                    if (!reader.IsDBNull(vc_Thumb1ColumnIndex))
+                        record.vc_Thumb1 = Convert.ToString(reader.GetValue(vc_Thumb1ColumnIndex));
                     if (!reader.IsDBNull(vc_PicFile2ColumnIndex))
                         record.vc_PicFile2 = Convert.ToString(reader.GetValue(vc_PicFile2ColumnIndex));
+                    if (!reader.IsDBNull(vc_PicFile3ColumnIndex))
+                        record.vc_PicFile3 = Convert.ToString(reader.GetValue(vc_PicFile3ColumnIndex));
                     if (!reader.IsDBNull(vc_SalesStatusColumnIndex))
                         record.vc_SalesStatus = Convert.ToString(reader.GetValue(vc_SalesStatusColumnIndex));
                     if (!reader.IsDBNull(dt_UpdateTimeColumnIndex))
@@ -962,10 +988,18 @@ namespace TaoAnJu.Util
             dataColumn = dataTable.Columns["vc_PicFile1"];
             if (!row.IsNull(dataColumn))
                 mappedObject.vc_PicFile1 = (string)row[dataColumn];
+            // Column vc_Thumb1
+            dataColumn = dataTable.Columns["vc_Thumb1"];
+            if (!row.IsNull(dataColumn))
+                mappedObject.vc_Thumb1 = (string)row[dataColumn];
             // Column vc_PicFile2
             dataColumn = dataTable.Columns["vc_PicFile2"];
             if (!row.IsNull(dataColumn))
                 mappedObject.vc_PicFile2 = (string)row[dataColumn];
+            // Column vc_PicFile3
+            dataColumn = dataTable.Columns["vc_PicFile3"];
+            if (!row.IsNull(dataColumn))
+                mappedObject.vc_PicFile3 = (string)row[dataColumn];
             // Column vc_SalesStatus
             dataColumn = dataTable.Columns["vc_SalesStatus"];
             if (!row.IsNull(dataColumn))
@@ -1074,7 +1108,11 @@ namespace TaoAnJu.Util
             dataColumn.MaxLength = 4000;
             dataColumn = dataTable.Columns.Add("vc_PicFile1", typeof(string));
             dataColumn.MaxLength = 50;
+            dataColumn = dataTable.Columns.Add("vc_Thumb1", typeof(string));
+            dataColumn.MaxLength = 50;
             dataColumn = dataTable.Columns.Add("vc_PicFile2", typeof(string));
+            dataColumn.MaxLength = 50;
+            dataColumn = dataTable.Columns.Add("vc_PicFile3", typeof(string));
             dataColumn.MaxLength = 50;
             dataColumn = dataTable.Columns.Add("vc_SalesStatus", typeof(string));
             dataColumn.MaxLength = 20;
@@ -1217,7 +1255,13 @@ namespace TaoAnJu.Util
                 case "vc_PicFile1":
                     parameter = _db.AddParameter(cmd, paramName, SqlDbType.NVarChar, value);
                     break;
+                case "vc_Thumb1":
+                    parameter = _db.AddParameter(cmd, paramName, SqlDbType.NVarChar, value);
+                    break;
                 case "vc_PicFile2":
+                    parameter = _db.AddParameter(cmd, paramName, SqlDbType.NVarChar, value);
+                    break;
+                case "vc_PicFile3":
                     parameter = _db.AddParameter(cmd, paramName, SqlDbType.NVarChar, value);
                     break;
                 case "vc_SalesStatus":
