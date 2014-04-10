@@ -1,6 +1,6 @@
 ﻿$(function () {
-    var opt = { title: "小淘提示", content: "现在立即关注淘安居官方微信（taoanjufc），即可领取看房现金红包，还可微信在线预约排号，更多实用功能等你来发现！" };
-    $('#btnBuyHelp').popover(opt);
+    //var opt = { title: "小淘提示", content: "现在立即关注淘安居官方微信（taoanjufc），即可领取看房现金红包，还可微信在线预约排号，更多实用功能等你来发现！" };
+    //$('#btnBuyHelp').popover(opt);
 
     var id = GetQueryString("id");
     $("#itemId").val(id);
