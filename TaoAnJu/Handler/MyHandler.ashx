@@ -516,6 +516,7 @@ public class MyHandler : IHttpHandler
                 Result.Set("Hotline", Hotline);
                 Result.Set("Location", Location);
                 Result.Set("ReferencePrice", ReferencePrice);
+                Result.Set("OpeningTime", OpeningTime);
 
                 //获取项目视频
                 initViewInfo(ref Result);
@@ -580,7 +581,7 @@ public class MyHandler : IHttpHandler
                 c.vc_Mobile = usertel;
                 c.vc_Name = username;
                 //自动分配给服务客户数量最少的销售代表，没有销售代表则分配给管理员
-                sql = "select top 1 int_UserId from tb_UserInfo order by int_CCount asc,int_UserType desc";
+                sql = "select top 1 int_UserId from tb_UserInfo order by int_UserType desc,int_CCount asc";
                 DataTable dt = db.ExecuteQuery(sql).Tables[0];
                 if (dt.Rows.Count > 0)
                 {

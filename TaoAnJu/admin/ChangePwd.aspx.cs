@@ -51,7 +51,8 @@ public partial class admin_ChangePwd : CAdminCookiePage
                     lit_Msg.Text = "旧密码输入错误，请重新输入！";
                     return;
                 }
-                sql = "update tb_UserInfo set dt_LastPwdChangeDate='"+DateTime.Now.ToString ()+"',vc_LoginPwd='" + EncodPwd + "' where int_UserId=" + LoginInfo.UserId.ToString();
+                string NewEncodPwd = CSecretProcess.Encrypt(txt_newpwd.Text, RiSystem.PwdSecret);
+                sql = "update tb_UserInfo set dt_LastPwdChangeDate='" + DateTime.Now.ToString() + "',vc_LoginPwd='" + NewEncodPwd + "' where int_UserId=" + LoginInfo.UserId.ToString();
                 db.ExecuteNonQuery(sql);
                 RiSystem.AddLog(db, "修改", LoginInfo.RealName + "进行 密码 修改操作", Request.UserHostAddress, LoginInfo.UserId);
                 lit_Script.Text = StringTools.AddScript("JqueryDialog.Close();");

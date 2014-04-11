@@ -1,0 +1,978 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <title>淘安居</title>
+    <!-- CSDN加速 -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/css/bootstrap-theme.min.css">
+    <script src="http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script>
+
+    <link href="Content/lightbox/css/lightbox.css?v=1" rel="stylesheet" />
+    <link href="Content/css/detail1.min.css?v=4" rel="stylesheet" />
+
+</head>
+<body>
+    <div>
+        <!--图片Carousel-->
+        <div id="myCarousel" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="item active masthead">
+                    <div class="masthead-bg" style="background: url('http://www.taoanju.cc/file/1007/item_1007_201404101410269725.jpg') repeat center center"></div>
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1 style="font-size: 3.8em;">华宇经典</h1>
+                            <h2><strong>3千抵2万，立即报名看房，2014年5月盛大开盘！</strong></h2>
+                            <p>
+                                <a class="btn btn-lg btn-danger btn-shadow bs3-link" href="javascript:tobaoming();" role="button">在线免费排号</a>
+                            </p>
+                            <h2><strong></strong></h2>
+                            <strong>由<a class="bs2-link" href="/Index.aspx" target="_blank" role="button">淘安居</a>鼎力推荐</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--官方社交-->
+        <div class="bc-social">
+            <div class="container">
+                <ul class="bc-social-buttons">
+                    <li>
+                        <span class="label label-success">官方QQ:1994362676</span>
+                        <a target="_blank" href="http://sighttp.qq.com/authd?IDKEY=a562c6ec966f9a559faa77aab28f2d37e6c78d48987de6d7"><img border="0" src="http://wpa.qq.com/imgd?IDKEY=a562c6ec966f9a559faa77aab28f2d37e6c78d48987de6d7&pic=51" alt="在线沟通" title="在线沟通"></a>
+                    </li>
+                    <li><span class="label label-success">咨询热线：400-600-5291</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <!--功能块-->
+        <div class="container projects">
+
+            <table class="table table-hover table-responsive table-condensed">
+                <tr>
+                    <th>打折优惠</th>
+                    <td>团购一万抵三万</td>
+                    <th>开盘时间</th>
+                    <td>2014年3月16日</td>
+                </tr>
+                <tr>
+                    <th>楼盘地址</th>
+                    <td>香河县绣水街西段与永胜路交口</td>
+                    <th>产权年限</th>
+                    <td>70年</td>
+                </tr>
+                <tr>
+                    <th>开发商</th>
+                    <td>华宇地产综合开发有限公司</td>
+                    <th>预入住时间</th>
+                    <td>2014年下半年</td>
+                </tr>
+                <tr>
+                    <th>物业费</th>
+                    <td>1.2元/平米/月</td>
+                    <th>水费</th>
+                    <td>2元/吨</td>
+                </tr>
+                <tr>
+                    <th>电费</th>
+                    <td>0.8元/度</td>
+                    <th>暖气费</th>
+                    <td>25元/平米</td>
+                </tr>
+                <tr>
+                    <th>2013年12月30日参考价格</th>
+                    <td colspan="3">均价 5500元/平米</td>
+                </tr>
+                <tr>
+                    <th>看房班车地址</th>
+                    <td colspan="3">地铁10号线国贸站G口出，马路对面惠普大厦东行10米大北写字楼路口，周六10点准时发车</td>
+                </tr>
+                <tr>
+                    <th>小区周边配套</th>
+                    <td colspan="3">香河长途汽车站、香河一中、香河公安局、利康儿童医院、938公交站、香河交警大队、亚太城</td>
+                </tr>
+                <tr>
+                    <th>自驾看房的具体路线</th>
+                    <td colspan="3">
+                        京沈高速，到香河收费站再往前行，导航到香河县政府，售楼处就在县政府南行50米（快乐购）对面《华宇经典售楼中心》
+                        乘车路线：到北京（东）站做938直达香河快车到新华大街西口（过香河收费站第三站）下车，打车五元到快乐购下，售楼处就在快乐购对面
+                    </td>
+                </tr>
+                <tr>
+                    <th>小区户型</th>
+                    <td colspan="3">A户型、A反户型、B户型、B反户型、C户型、C反户型（详图见下）</td>
+                </tr>
+            </table>
+
+            <div style="width: 100%; overflow: hidden;" id="sj">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr>
+                            <td scope="col" id="sj1">
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tbody>
+                                        <tr>
+
+                                            <td>
+                                                <table border="0" align="center" cellpadding="0" cellspacing="0" style="width: 155px; margin: 5px;">
+                                                    <tbody>
+                                                        <tr align="center">
+                                                            <td>
+                                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td style="width: 155px; height: 125px; border: 1px solid #C4D5E3; padding: 2px;">
+                                                                                <a href="Content/1007/item(1).jpg" target="_blank">
+                                                                                    <img src="Content/1007/item(1).jpg" border="0" width="150" height="112" onload="DrawImage(this,150,120)">
+                                                                                </a>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td height="30"><a href="Content/1007/item(1).jpg" target="_blank">户型A</a></td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                            <td>
+                                                <table border="0" align="center" cellpadding="0" cellspacing="0" style="width: 155px; margin: 5px;">
+                                                    <tbody>
+                                                        <tr align="center">
+                                                            <td>
+                                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td style="width: 155px; height: 125px; border: 1px solid #C4D5E3; padding: 2px;">
+                                                                                <a href="Content/1007/item(1).jpg" target="_blank">
+                                                                                    <img src="Content/1007/item(1).jpg" border="0" width="150" height="112" onload="DrawImage(this,150,120)">
+                                                                                </a>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td height="30"><a href="Content/1007/item(1).jpg" target="_blank">户型A反</a></td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                            <td>
+                                                <table border="0" align="center" cellpadding="0" cellspacing="0" style="width: 155px; margin: 5px;">
+                                                    <tbody>
+                                                        <tr align="center">
+                                                            <td>
+                                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td style="width: 155px; height: 125px; border: 1px solid #C4D5E3; padding: 2px;">
+                                                                                <a href="Content/1007/item(1).jpg" target="_blank">
+                                                                                    <img src="Content/1007/item(1).jpg" border="0" width="150" height="112" onload="DrawImage(this,150,120)">
+                                                                                </a>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td height="30"><a href="Content/1007/item(1).jpg" target="_blank">户型B</a></td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                            <td>
+                                                <table border="0" align="center" cellpadding="0" cellspacing="0" style="width: 155px; margin: 5px;">
+                                                    <tbody>
+                                                        <tr align="center">
+                                                            <td>
+                                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td style="width: 155px; height: 125px; border: 1px solid #C4D5E3; padding: 2px;">
+                                                                                <a href="Content/1007/item(1).jpg" target="_blank">
+                                                                                    <img src="Content/1007/item(1).jpg" border="0" width="150" height="112" onload="DrawImage(this,150,120)">
+                                                                                </a>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td height="30"><a href="Content/1007/item(1).jpg" target="_blank">户型B反</a></td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                            <td>
+                                                <table border="0" align="center" cellpadding="0" cellspacing="0" style="width: 155px; margin: 5px;">
+                                                    <tbody>
+                                                        <tr align="center">
+                                                            <td>
+                                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td style="width: 155px; height: 125px; border: 1px solid #C4D5E3; padding: 2px;">
+                                                                                <a href="Content/1007/item(1).jpg" target="_blank">
+                                                                                    <img src="Content/1007/item(1).jpg" border="0" width="150" height="112" onload="DrawImage(this,150,120)">
+                                                                                </a>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td height="30"><a href="Content/1007/item(1).jpg" target="_blank">户型C</a></td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+
+                                            <td>
+                                                <table border="0" align="center" cellpadding="0" cellspacing="0" style="width: 155px; margin: 5px;">
+                                                    <tbody>
+                                                        <tr align="center">
+                                                            <td>
+                                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td style="width: 155px; height: 125px; border: 1px solid #C4D5E3; padding: 2px;">
+                                                                                <a href="Content/1007/item(1).jpg" target="_blank">
+                                                                                    <img src="Content/1007/item(1).jpg" border="0" width="150" height="112" onload="DrawImage(this,150,120)">
+                                                                                </a>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td height="30"><a href="Content/1007/item(1).jpg" target="_blank">户型C反</a></td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+
+                                            <td>
+                                                <table border="0" align="center" cellpadding="0" cellspacing="0" style="width: 155px; margin: 5px;">
+                                                    <tbody>
+                                                        <tr align="center">
+                                                            <td>
+                                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td style="width: 155px; height: 125px; border: 1px solid #C4D5E3; padding: 2px;">
+                                                                                <a href="Content/1007/item(1).jpg" target="_blank">
+                                                                                    <img src="Content/1007/item(1).jpg" border="0" width="150" height="112" onload="DrawImage(this,150,120)">
+                                                                                </a>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td height="30"><a href="Content/1007/item(1).jpg" target="_blank">户型A</a></td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                            <td>
+                                                <table border="0" align="center" cellpadding="0" cellspacing="0" style="width: 155px; margin: 5px;">
+                                                    <tbody>
+                                                        <tr align="center">
+                                                            <td>
+                                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td style="width: 155px; height: 125px; border: 1px solid #C4D5E3; padding: 2px;">
+                                                                                <a href="Content/1007/item(1).jpg" target="_blank">
+                                                                                    <img src="Content/1007/item(1).jpg" border="0" width="150" height="112" onload="DrawImage(this,150,120)">
+                                                                                </a>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td height="30"><a href="Content/1007/item(1).jpg" target="_blank">户型A反</a></td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                            <td>
+                                                <table border="0" align="center" cellpadding="0" cellspacing="0" style="width: 155px; margin: 5px;">
+                                                    <tbody>
+                                                        <tr align="center">
+                                                            <td>
+                                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td style="width: 155px; height: 125px; border: 1px solid #C4D5E3; padding: 2px;">
+                                                                                <a href="Content/1007/item(1).jpg" target="_blank">
+                                                                                    <img src="Content/1007/item(1).jpg" border="0" width="150" height="112" onload="DrawImage(this,150,120)">
+                                                                                </a>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td height="30"><a href="Content/1007/item(1).jpg" target="_blank">户型B</a></td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                            <td>
+                                                <table border="0" align="center" cellpadding="0" cellspacing="0" style="width: 155px; margin: 5px;">
+                                                    <tbody>
+                                                        <tr align="center">
+                                                            <td>
+                                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td style="width: 155px; height: 125px; border: 1px solid #C4D5E3; padding: 2px;">
+                                                                                <a href="Content/1007/item(1).jpg" target="_blank">
+                                                                                    <img src="Content/1007/item(1).jpg" border="0" width="150" height="112" onload="DrawImage(this,150,120)">
+                                                                                </a>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td height="30"><a href="Content/images/hxB-.png" target="_blank">户型B反</a></td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                            <td>
+                                                <table border="0" align="center" cellpadding="0" cellspacing="0" style="width: 155px; margin: 5px;">
+                                                    <tbody>
+                                                        <tr align="center">
+                                                            <td>
+                                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td style="width: 155px; height: 125px; border: 1px solid #C4D5E3; padding: 2px;">
+                                                                                <a href="Content/images/hxC.png" target="_blank">
+                                                                                    <img src="Content/images/hxC.png" border="0" width="150" height="112" onload="DrawImage(this,150,120)">
+                                                                                </a>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td height="30"><a href="Content/images/hxC.png" target="_blank">户型C</a></td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+
+                                            <td>
+                                                <table border="0" align="center" cellpadding="0" cellspacing="0" style="width: 155px; margin: 5px;">
+                                                    <tbody>
+                                                        <tr align="center">
+                                                            <td>
+                                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td style="width: 155px; height: 125px; border: 1px solid #C4D5E3; padding: 2px;">
+                                                                                <a href="Content/images/hxC-.png" target="_blank">
+                                                                                    <img src="Content/images/hxC-.png" border="0" width="150" height="112" onload="DrawImage(this,150,120)">
+                                                                                </a>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td height="30"><a href="Content/images/hxC-.png" target="_blank">户型C反</a></td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+
+
+
+
+
+
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td scope="col" id="sj2">
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tbody>
+                                        <tr>
+
+                                            <td>
+                                                <table border="0" align="center" cellpadding="0" cellspacing="0" style="width: 155px; margin: 5px;">
+                                                    <tbody>
+                                                        <tr align="center">
+                                                            <td>
+                                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td style="width: 155px; height: 125px; border: 1px solid #C4D5E3; padding: 2px;">
+                                                                                <a href="Content/images/hxA1.png" target="_blank">
+                                                                                    <img src="Content/images/hxA1.png" border="0" width="150" height="112" onload="DrawImage(this,150,120)">
+                                                                                </a>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td height="30"><a href="Content/images/hxA1.png" target="_blank">户型A</a></td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                            <td>
+                                                <table border="0" align="center" cellpadding="0" cellspacing="0" style="width: 155px; margin: 5px;">
+                                                    <tbody>
+                                                        <tr align="center">
+                                                            <td>
+                                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td style="width: 155px; height: 125px; border: 1px solid #C4D5E3; padding: 2px;">
+                                                                                <a href="Content/images/hxA1-.png" target="_blank">
+                                                                                    <img src="Content/images/hxA1-.png" border="0" width="150" height="112" onload="DrawImage(this,150,120)">
+                                                                                </a>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td height="30"><a href="Content/images/hxA1-.png" target="_blank">户型A反</a></td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                            <td>
+                                                <table border="0" align="center" cellpadding="0" cellspacing="0" style="width: 155px; margin: 5px;">
+                                                    <tbody>
+                                                        <tr align="center">
+                                                            <td>
+                                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td style="width: 155px; height: 125px; border: 1px solid #C4D5E3; padding: 2px;">
+                                                                                <a href="Content/images/hxB.png" target="_blank">
+                                                                                    <img src="Content/images/hxB.png" border="0" width="150" height="112" onload="DrawImage(this,150,120)">
+                                                                                </a>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td height="30"><a href="Content/images/hxB.png" target="_blank">户型B</a></td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                            <td>
+                                                <table border="0" align="center" cellpadding="0" cellspacing="0" style="width: 155px; margin: 5px;">
+                                                    <tbody>
+                                                        <tr align="center">
+                                                            <td>
+                                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td style="width: 155px; height: 125px; border: 1px solid #C4D5E3; padding: 2px;">
+                                                                                <a href="Content/images/hxB-.png" target="_blank">
+                                                                                    <img src="Content/images/hxB-.png" border="0" width="150" height="112" onload="DrawImage(this,150,120)">
+                                                                                </a>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td height="30"><a href="Content/images/hxB-.png" target="_blank">户型B反</a></td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                            <td>
+                                                <table border="0" align="center" cellpadding="0" cellspacing="0" style="width: 155px; margin: 5px;">
+                                                    <tbody>
+                                                        <tr align="center">
+                                                            <td>
+                                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td style="width: 155px; height: 125px; border: 1px solid #C4D5E3; padding: 2px;">
+                                                                                <a href="Content/images/hxC.png" target="_blank">
+                                                                                    <img src="Content/images/hxC.png" border="0" width="150" height="112" onload="DrawImage(this,150,120)">
+                                                                                </a>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td height="30"><a href="Content/images/hxC.png" target="_blank">户型C</a></td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+
+                                            <td>
+                                                <table border="0" align="center" cellpadding="0" cellspacing="0" style="width: 155px; margin: 5px;">
+                                                    <tbody>
+                                                        <tr align="center">
+                                                            <td>
+                                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td style="width: 155px; height: 125px; border: 1px solid #C4D5E3; padding: 2px;">
+                                                                                <a href="Content/images/hxC-.png" target="_blank">
+                                                                                    <img src="Content/images/hxC-.png" border="0" width="150" height="112" onload="DrawImage(this,150,120)">
+                                                                                </a>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td height="30"><a href="Content/images/hxC-.png" target="_blank">户型C反</a></td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+
+                                            <td>
+                                                <table border="0" align="center" cellpadding="0" cellspacing="0" style="width: 155px; margin: 5px;">
+                                                    <tbody>
+                                                        <tr align="center">
+                                                            <td>
+                                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td style="width: 155px; height: 125px; border: 1px solid #C4D5E3; padding: 2px;">
+                                                                                <a href="Content/images/hxA1.png" target="_blank">
+                                                                                    <img src="Content/images/hxA1.png" border="0" width="150" height="112" onload="DrawImage(this,150,120)">
+                                                                                </a>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td height="30"><a href="Content/images/hxA1.png" target="_blank">户型A</a></td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                            <td>
+                                                <table border="0" align="center" cellpadding="0" cellspacing="0" style="width: 155px; margin: 5px;">
+                                                    <tbody>
+                                                        <tr align="center">
+                                                            <td>
+                                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td style="width: 155px; height: 125px; border: 1px solid #C4D5E3; padding: 2px;">
+                                                                                <a href="Content/images/hxA1-.png" target="_blank">
+                                                                                    <img src="Content/images/hxA1-.png" border="0" width="150" height="112" onload="DrawImage(this,150,120)">
+                                                                                </a>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td height="30"><a href="Content/images/hxA1-.png" target="_blank">户型A反</a></td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                            <td>
+                                                <table border="0" align="center" cellpadding="0" cellspacing="0" style="width: 155px; margin: 5px;">
+                                                    <tbody>
+                                                        <tr align="center">
+                                                            <td>
+                                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td style="width: 155px; height: 125px; border: 1px solid #C4D5E3; padding: 2px;">
+                                                                                <a href="Content/images/hxB.png" target="_blank">
+                                                                                    <img src="Content/images/hxB.png" border="0" width="150" height="112" onload="DrawImage(this,150,120)">
+                                                                                </a>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td height="30"><a href="Content/images/hxB.png" target="_blank">户型B</a></td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                            <td>
+                                                <table border="0" align="center" cellpadding="0" cellspacing="0" style="width: 155px; margin: 5px;">
+                                                    <tbody>
+                                                        <tr align="center">
+                                                            <td>
+                                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td style="width: 155px; height: 125px; border: 1px solid #C4D5E3; padding: 2px;">
+                                                                                <a href="Content/images/hxB-.png" target="_blank">
+                                                                                    <img src="Content/images/hxB-.png" border="0" width="150" height="112" onload="DrawImage(this,150,120)">
+                                                                                </a>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td height="30"><a href="Content/images/hxB-.png" target="_blank">户型B反</a></td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                            <td>
+                                                <table border="0" align="center" cellpadding="0" cellspacing="0" style="width: 155px; margin: 5px;">
+                                                    <tbody>
+                                                        <tr align="center">
+                                                            <td>
+                                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td style="width: 155px; height: 125px; border: 1px solid #C4D5E3; padding: 2px;">
+                                                                                <a href="Content/images/hxC.png" target="_blank">
+                                                                                    <img src="Content/images/hxC.png" border="0" width="150" height="112" onload="DrawImage(this,150,120)">
+                                                                                </a>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td height="30"><a href="Content/images/hxC.png" target="_blank">户型C</a></td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+
+                                            <td>
+                                                <table border="0" align="center" cellpadding="0" cellspacing="0" style="width: 155px; margin: 5px;">
+                                                    <tbody>
+                                                        <tr align="center">
+                                                            <td>
+                                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td style="width: 155px; height: 125px; border: 1px solid #C4D5E3; padding: 2px;">
+                                                                                <a href="Content/images/hxC-.png" target="_blank">
+                                                                                    <img src="Content/images/hxC-.png" border="0" width="150" height="112" onload="DrawImage(this,150,120)">
+                                                                                </a>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td height="30"><a href="Content/images/hxC-.png" target="_blank">户型C反</a></td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+
+
+
+
+
+
+
+
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <hr />
+
+            <div id="items" class="row">
+
+                <div class="col-sm-6 col-md-4 ">
+                    <div class="thumbnail">
+                        <a href="javascript:void(0)" title="微赢通官网微信">
+                            <img class="lazy" src="Content/images/i1.jpg" width="300" height="150" />
+                        </a>
+                        <div class="caption">
+                            <h3>
+                                <a href="javascript:tobaoming();" title="跨平台导航">
+                                    简装现房，即买即住<br />
+                                    <small>在线免费排号</small>
+                                </a>
+                            </h3>
+                            <p>
+                                门窗安装完毕，四白落地，易检测房屋质量，可进行个性化装修，易租易售。高层板楼主体结构好，外墙37公分，主体框架由钢筋混凝土组成，结实牢固，抗震系数高
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 ">
+                    <div class="thumbnail">
+                        <a href="javascript:void(0)" title="淘安居">
+                            <img class="lazy" src="Content/images/i2.jpg" width="300" height="150">
+                        </a>
+                        <div class="caption">
+                            <h3>
+                                <a href="javascript:tobaoming();" title="自定义WAP网站底部导航">
+                                    2014年3月16日盛大开盘<br>
+                                    <small>在线免费排号</small>
+                                </a>
+                            </h3>
+                            <p>
+                                香河华宇房地产综合开发有限公司，香河最具实力的开发商，70%--80%项目都均该公司开发建设。首发抢号，好户型就是你的
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 ">
+                    <div class="thumbnail">
+                        <a href="javascript:void(0)" title="华宇经典">
+                            <img class="lazy" src="Content/images/i3.jpg" width="300" height="150">
+                        </a>
+                        <div class="caption">
+                            <h3>
+                                <a href="javascript:tobaoming();" title="华宇经典">
+                                    北京938路直达楼盘<br>
+                                    <small>在线免费排号</small>
+                                </a>
+                            </h3>
+                            <p>
+                                京沈高速香河第二出口，北京938路公交香河家具城西口站步行3分钟即可到达本项目
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 ">
+                    <div class="thumbnail">
+                        <a href="javascript:void(0)" title="华宇经典">
+                            <img class="lazy" src="Content/images/i4.jpg" width="300" height="150">
+                        </a>
+                        <div class="caption">
+                            <h3>
+                                <a href="javascript:tobaoming();" title="华宇经典">
+                                    超低首付，仅需5万起<br>
+                                    <small>在线免费排号</small>
+                                </a>
+                            </h3>
+                            <p>
+                                80至100平米，小户型首付低。均价5500/m²，助您告别北漂
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 ">
+                    <div class="thumbnail">
+                        <a href="javascript:void(0)" title="华宇经典">
+                            <img class="lazy" src="Content/images/i5.jpg" width="300" height="150">
+                        </a>
+                        <div class="caption">
+                            <h3>
+                                <a href="javascript:tobaoming();" title="华宇经典">
+                                    香河新一中旁边<br>
+                                    <small>在线免费排号</small>
+                                </a>
+                            </h3>
+                            <p>
+                                紧邻香河新一中、县直幼儿园，周边配套完善，距离医院、银行、超市、县城中心距离都非常适中，是您的不二选择
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 ">
+                    <div class="thumbnail">
+                        <a href="javascript:void(0)" title="华宇经典">
+                            <img class="lazy" src="Content/images/i6.jpg" width="300" height="150">
+                        </a>
+                        <div class="caption">
+                            <h3>
+                                <a href="javascript:tobaoming();" title="华宇经典">
+                                    投资、自助皆划算<br>
+                                    <small>在线免费排号</small>
+                                </a>
+                            </h3>
+                            <p>
+                                对比北京周边其他区域，通州均价20000元，燕郊13000元，廊坊8000元，大厂6000元，固安10000元。现在的香河房产均价6000元，而我们的华宇经典，首发仅需均价5500/m²，可观的升值空间值得您拥有
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <!--隐藏窗体-->
+        <div id="win" onclick="closeWin()"></div>
+
+        <!--顶部弹窗-->
+        <div id="alert" class="navbar-fixed-top">
+            <div class="row">
+                <div id="alertContent" class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                </div>
+                <a href="javascript:void(0);" class="col-lg-2 col-md-2 col-sm-12 col-xs-12" onclick="javascript: $('#alert').fadeOut();"><span id="btnAlertClose" class="glyphicon glyphicon-remove-circle"></span></a>
+            </div>
+        </div>
+
+        <!--弹窗报名看房-->
+        <div id="boxUpBM" class="centerWin">
+            <a class="btnClose" href="javascript:closeWin();">关闭</a>
+            <hr style="visibility:hidden" />
+            <h4 class="adtitle">【本服务由华宇经典开发商全程提供】</h4>
+            <h3 class="txtAdLine">华宇经典，3千抵2万，立即报名看房，2014年5月盛大开盘！</h3>
+            <br />
+            <form id="bmForm" class="input-group">
+                <input id="itemId" type="hidden" name="itemId" value="" />
+                <div class="input-group">
+                    <span class="input-group-addon">姓名</span>
+                    <input type="text" id="username2" name="username" class="form-control" placeholder="怎么称呼您" />
+                </div>
+                <br />
+                <div class="input-group">
+                    <span class="input-group-addon">手机</span>
+                    <input type="tel" id="usertel2" name="usertel" class="form-control" placeholder="您的手机号" />
+                </div>
+
+                <br />
+                <button type="button" class="btnApply btn btn-danger btn-block" data-loading-text="正在提交...">在线免费排号</button>
+            </form>
+
+            <hr />
+            <p>
+                <h4>咨询电话：<span class="itemTel">400-627-6577</span></h4>
+            </p>
+            <p>
+                <h4>月薪2999，买<span class="itemName">华宇经典</span>就可以</h4>
+            </p>
+        </div>
+
+        <!--底部-->
+        <footer class="footer">
+            <p>
+                官方热线：<a href="tel:400-627-6577">400-627-6577</a>&nbsp;&nbsp;&nbsp;联系QQ：<a target="_blank" href="http://sighttp.qq.com/authd?IDKEY=a562c6ec966f9a559faa77aab28f2d37e6c78d48987de6d7"><img border="0" src="http://wpa.qq.com/imgd?IDKEY=a562c6ec966f9a559faa77aab28f2d37e6c78d48987de6d7&pic=51" alt="在线沟通" title="在线沟通"></a>
+            </p>
+            <p>公司地址：北京朝阳通惠河北路31号泰珍嘉大厦5、6层</p>
+            <p>淘安居 版权所有</p>
+        </footer>
+
+        <!--全屏遮罩-->
+        <div id="mask"></div>
+
+        <!--隐藏窗体-->
+        <div id="win" onclick="closeWin()"></div>
+        <!--弹窗-->
+        <div id="boxUp" class="centerWin">
+            <a href="javascript:closeWin();" style="position:absolute;right:5%;top:2%;color:white;">关闭</a>
+            <div id="boxUpContent">
+            </div>
+        </div>
+
+        <!--百度推广-->
+        <script type="text/javascript">
+            var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+            document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F057b7f4a4ea616b5367e7f7d78649b43' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+
+        <script>
+            /**回到顶部按钮*/
+            $(window).scroll(function () {
+                $("#sys_backtotop").unbind("click");
+                if ($("#sys_backtotop").length == 0) {
+                    $("body").append("<a href='javascript:;'><div id='sys_backtotop' style='border-radius:20px 20px;background:rgb(55,193,0);color:white;box-shadow: 0 0 .3em .005em rgba(0,0,0,0.3);font-weight:bold;padding:0.5%;position:fixed;right:1.5%;bottom:1.5%;overflow:hidden;display:none;z-index:9;'>顶↑</div></a>");
+                }
+                if ($(window).scrollTop() > 100) {
+                    $("#sys_backtotop").fadeIn(500);
+                } else {
+                    $("#sys_backtotop").fadeOut(500);
+                }
+
+                $("#sys_backtotop").bind("click", function () {
+                    $('body,html').animate({
+                        scrollTop: 0
+                    }, 1000);
+                    return false;
+                });
+            });
+        </script>
+
+        <script type="text/javascript">
+            var speed = 15;
+            sj2.innerHTML = sj1.innerHTML;
+            function Marquee1() {
+                if (sj2.offsetWidth - sj.scrollLeft <= 0)
+                    sj.scrollLeft -= sj1.offsetWidth;
+                else {
+                    sj.scrollLeft++;
+                }
+            }
+            var MyMar1 = setInterval(Marquee1, speed);
+            sj.onmouseover = function () { clearInterval(MyMar1); };
+            sj.onmouseout = function () { MyMar1 = setInterval(Marquee1, speed); };
+        </script>
+
+        <!--百度推广-->
+        <script type="text/javascript">
+            var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+            document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F057b7f4a4ea616b5367e7f7d78649b43' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+    </div>
+
+    <script src="Content/Scripts/common.js?v=1"></script>
+    <script src="Content/Scripts/detail1.min.js?v=1"></script>
+</body>
+</html>

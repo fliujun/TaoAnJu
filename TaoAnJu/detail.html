@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/css/bootstrap-theme.min.css">
     <script src="http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
     <script src="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script>
-    
+
     <link href="Content/lightbox/css/lightbox.css?v=1" rel="stylesheet" />
-    <link href="Content/css/detail.min.css?v=3" rel="stylesheet" />
+    <link href="Content/css/detail.min.css?v=4" rel="stylesheet" />
 </head>
 <body>
     <!--顶部-->
@@ -50,22 +50,26 @@
     </header>
     <hr class="fullLine" />
 
+
+
     <!--内容-->
     <article>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
+                    <a class="topAdLine txtAdLine" href="javascript:void(0)" onclick="openWin('#boxUpBM');">本服务由<span class="itemName"></span>开发商全程提供：&nbsp;&nbsp;</a>
+                </div>
+                <div class="col-lg-12">
                     <div id="headshow">
                         <!--图片尺寸：715*480-->
                         <div id="ItemPic" class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
                             <div class="slider">
-                                <ul id="pics" class="slides">
-                                </ul>
+                                <ul id="pics" class="slides"></ul>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                             <!--项目名称-->
-                            <div id="title">
+                            <div id="title" class="itemName">
                             </div>
                             <!--标签-->
                             <div id="label">
@@ -92,15 +96,15 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="usertel">手机</label>
-                                    <input type="text" class="form-control" required id="usertel" placeholder="将作为会员标识的唯一凭证">
+                                    <input type="text" class="form-control" required id="usertel" placeholder="您的手机号">
                                 </div>
                                 <div style="margin-top:10px;">
-                                    <button id="btnApply" type="button" class="btn btn-lg btn-success btn-block" data-loading-text="正在提交...">申请</button>
+                                    <button type="button" class="btnApply btn btn-lg btn-success btn-block" data-loading-text="正在提交...">申请</button>
                                 </div>
                                 <!--<div class="btn-group" style="margin-top:10px;">
-            <button id="btnApply" type="button" class="btn btn-lg btn-danger" data-loading-text="正在提交...">申请</button>
-            <input type="button" id="btnBuyHelp" data-container="body" data-toggle="popover" data-placement="top" class="btn btn-lg btn-default" value="？" />
-        </div>-->
+                                    <button id="btnApply" type="button" class="btn btn-lg btn-danger" data-loading-text="正在提交...">申请</button>
+                                    <input type="button" id="btnBuyHelp" data-container="body" data-toggle="popover" data-placement="top" class="btn btn-lg btn-default" value="？" />
+                                </div>-->
                             </form>
                         </div>
                     </div>
@@ -203,8 +207,39 @@
         <div class="row">
             <div id="alertContent" class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
             </div>
-            <a href="javascript:void(0);" class="col-lg-2 col-md-2 col-sm-12 col-xs-12" onclick="javascript: closeWin('#alert');"><span id="btnAlertClose" class="glyphicon glyphicon-remove-circle"></span></a>
+            <a href="javascript:void(0);" class="col-lg-2 col-md-2 col-sm-12 col-xs-12" onclick="javascript: $('#alert').fadeOut();"><span id="btnAlertClose" class="glyphicon glyphicon-remove-circle"></span></a>
         </div>
+    </div>
+
+    <!--弹窗报名看房-->
+    <div id="boxUpBM" class="centerWin">
+        <a class="btnClose" href="javascript:closeWin();">关闭</a>
+        <hr style="visibility:hidden"/>
+        <h4 class="adtitle">【本服务由<span class="itemName"></span>开发商全程提供】</h4>
+        <h3 class="txtAdLine"></h3>
+        <br />
+        <form id="bmForm" class="input-group">
+            <div class="input-group">
+                <span class="input-group-addon">姓名</span>
+                <input type="text" id="username2" name="username" class="form-control" placeholder="怎么称呼您" />
+            </div>
+            <br />
+            <div class="input-group">
+                <span class="input-group-addon">手机</span>
+                <input type="tel" id="usertel2" name="usertel" class="form-control" placeholder="您的手机号" />
+            </div>
+
+            <br />
+            <button type="button" class="btnApply btn btn-danger btn-block" data-loading-text="正在提交...">申请</button>
+        </form>
+
+        <hr />
+        <p>
+            <h4>咨询电话：<span class="itemTel"></span></h4>
+        </p>
+        <p>
+            <h4>月薪2999，买<span class="itemName"></span>就可以</h4>
+        </p>
     </div>
 
     <!--脚本-->
@@ -212,8 +247,8 @@
     <!--腾讯地图-->
     <script charset="utf-8" src="http://map.qq.com/api/js?v=2.exp&key=U4VBZ-JNCWS-3UAOT-6L63F-IPEMO-V4BYN"></script>
     <script src="Content/glide/jquery.glide.min.js"></script>
-    <script src="Content/Scripts/common.js?v=3"></script>
-    <script src="Content/Scripts/detail.js?v=3"></script>
+    <script src="Content/Scripts/common.js?v=4"></script>
+    <script src="Content/Scripts/detail.js?v=4"></script>
 
     <!--百度-->
     <script type="text/javascript"> var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F74ed888839e807c94fe642a2a1ceb6f6' type='text/javascript'%3E%3C/script%3E")) </script>

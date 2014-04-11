@@ -97,27 +97,36 @@ function GetQueryString(name) {
 }
 
 //报名
-var $btnApply = $('#btnApply'), $username = $("#username"), $usertel = $("#usertel");
+var $btnApply = $('#btnApply'), $username = $("#username"), $usertel = $("#usertel"), $username2 = $("#username2"), $usertel2 = $("#usertel2"), $boxUpBM = $("#boxUpBM");
 $btnApply.button();
-$btnApply.click(function () {
+$(".btnApply").on("click", function () {
     var id = $("#itemId").val();
-    var username = $.trim($username.val());
-    var usertel = $.trim($usertel.val());
+    var username, usertel;
+    if ($boxUpBM.is(":hidden")) {
+        username = $.trim($username.val());
+        usertel = $.trim($usertel.val());
+    } else {
+        username = $.trim($username2.val());
+        usertel = $.trim($usertel2.val());
+    }
+
     if (!id) {
         showAlert("参数丢失，请刷新页面后重试", true);
         return;
     }
     if (username.length == 0) {
         showAlert("请输入您的姓名", true);
-        $username.focus();
         return;
     }
-    if (usertel.length == 0) {
-        showAlert("请输入您的手机号", true);
-        $usertel.focus();
+    if (usertel.length == 0 || !isMobile(usertel)) {
+        showAlert("请输入正确的手机号", true);
         return;
     }
+    baoming(id, username, usertel);
+});
 
+//在线报名
+function baoming(id, username, usertel) {
     $.ajax({
         url: "handler/MyHandler.ashx",
         type: "POST",
@@ -139,8 +148,30 @@ $btnApply.click(function () {
         error: function () {
         }
     });
-    return false;
-});
+}
+
+//是否是11位手机号
+function isMobile(n) {
+    return /^1\d{10}$/.test(n) && n != 11111111111;
+}
+
+//判断浏览器是平板、手机还是PC
+function getBType() {
+    var agent = navigator.userAgent.toLowerCase();
+    var res = agent.match(/android/);
+    if (res == "android")
+        return res;
+    res = agent.match(/iphone/);
+    if (res == "iphone")
+        return "ios";
+    res = agent.match(/ipad/);
+    if (res == "ipad")
+        return "ios";
+    res = agent.match(/windows/);
+    if (res == "windows")
+        return "wp";
+    return "pc";
+}
 
 //底部显示
 function showB(type) {
@@ -159,7 +190,7 @@ function showB(type) {
         case 10:
         case 11:
         case 12:
-            showAlertMask('<a href="Content/images/EQ.jpg" class="col-lg-5 col-md-5 col-sm-8 col-xs-12" data-lightbox="wechatEQ" data-title="淘安居官方微信二维码，扫一扫关注就有惊喜，红包火热派发中！您还可以直接添加微信号：taoanjufc"><img src="Content/images/EQ.jpg" style="width:100%;margin-bottom:20px;" /></a>');
+            showAlertMask('<a href="Content/images/weixinEQ.jpg" class="col-lg-5 col-md-5 col-sm-8 col-xs-12" data-lightbox="weixinEQ" data-title="淘安居官方微信二维码，扫一扫关注就有惊喜，红包火热派发中！您还可以直接添加微信号：taoanjufc"><img src="Content/images/weixinEQ.jpg" style="width:100%;margin-bottom:20px;" /></a>');
             break;
     }
 
