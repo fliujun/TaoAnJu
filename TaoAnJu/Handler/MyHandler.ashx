@@ -226,7 +226,7 @@ public class MyHandler : IHttpHandler
                     </table>
                     <button class='btnBuy btn btn-success btn-lg' title='{0}'><span class='glyphicon glyphicon-home'>&nbsp;</span>{9}</button>
                 </div>
-            </div>", dr["int_ItemId"].ToString(), picPath, "", dr["vc_ItemName"], dr["vc_Location"], dr["vc_SalesLocation"], dr["int_PropertyRight"], dr["dt_OpeningTime"], dr["dec_ReferencePrice"], dr["vc_Discount"]);
+            </div>", dr["int_ItemId"].ToString(), picPath, "", dr["vc_ItemName"], dr["vc_Location"], dr["vc_SalesLocation"], dr["int_PropertyRight"] + "年", dr["dt_OpeningTime"], "￥" + dr["dec_ReferencePrice"] + "元/㎡", dr["vc_Discount"]);
                 sb.Append(htmls);
             }
 
@@ -312,7 +312,7 @@ public class MyHandler : IHttpHandler
                 //建筑设计
                 string BuildDesign = obj.vc_BuildDesign.ToString();
                 //建筑面积
-                string BuildedArea = (!obj.dec_BuildedAreaNull && obj.dec_BuildedArea > 0) ? obj.dec_BuildedArea.ToString() : "";
+                string BuildedArea = (!obj.dec_BuildedAreaNull && obj.dec_BuildedArea > 0) ? obj.dec_BuildedArea.ToString() + "㎡" : "";
                 //建筑类别
                 string BuildType = obj.vc_BuildType.ToString();
                 //所属商圈
@@ -320,11 +320,11 @@ public class MyHandler : IHttpHandler
                 //入住时间
                 string CheckinTime = (!obj.dt_CheckinTimeNull) ? obj.dt_CheckinTime.ToString("yyyy-MM-dd") : "";
                 //配套信息
-                string ConfigureInfo = obj.vc_ConfigureInfo.ToString();
+                string ConfigureInfo = RiSystem.FormatBody(obj.vc_ConfigureInfo.ToString());
                 //承建商
                 string Contractor = obj.vc_Contractor.ToString();
                 //占地面积
-                string CoveredArea = (!obj.dec_CoveredAreaNull && obj.dec_CoveredArea > 0) ? obj.dec_CoveredArea.ToString() : "";
+                string CoveredArea = (!obj.dec_CoveredAreaNull && obj.dec_CoveredArea > 0) ? obj.dec_CoveredArea.ToString() + "㎡" : "";
                 //装修情况
                 string Decoration = obj.vc_Decoration.ToString();
                 //开发商
@@ -344,7 +344,7 @@ public class MyHandler : IHttpHandler
                 //户型
                 string HouseType = obj.vc_HouseType.ToString();
                 //楼盘简介
-                string Introduction = obj.vc_Introduction.ToString();
+                string Introduction = RiSystem.FormatBody(obj.vc_Introduction.ToString());
                 //项目名称
                 string ItemName = obj.vc_ItemName.ToString();
                 //景观设计
@@ -366,15 +366,15 @@ public class MyHandler : IHttpHandler
                 //物业类别
                 string PropertyType = obj.vc_PropertyType.ToString();
                 //价格
-                string ReferencePrice = (!obj.dec_ReferencePriceNull && obj.dec_ReferencePrice > 0) ? "￥" + obj.dec_ReferencePrice.ToString() + "/㎡" : "";
+                string ReferencePrice = (!obj.dec_ReferencePriceNull && obj.dec_ReferencePrice > 0) ? "￥" + obj.dec_ReferencePrice.ToString() + "元/㎡" : "";
                 //售楼地址
                 string SalesLocation = obj.vc_SalesLocation.ToString();
                 //售楼许可证
                 string SalesPermit = obj.vc_SalesPermit.ToString();
                 //交通出行
-                string Traffic = obj.vc_Traffic.ToString();
+                string Traffic = RiSystem.FormatBody(obj.vc_Traffic.ToString());
                 //容积率
-                string VolumeRate = (!obj.dec_VolumeRateNull && obj.dec_VolumeRate > 0) ? obj.dec_VolumeRate.ToString() : "";
+                string VolumeRate = (!obj.dec_VolumeRateNull && obj.dec_VolumeRate > 0) ? obj.dec_VolumeRate.ToString()+"%" : "";
                 //供水
                 string WaterSupply = obj.vc_WaterSupply.ToString();
                 //销售状态

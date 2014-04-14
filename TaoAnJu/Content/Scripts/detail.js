@@ -38,7 +38,7 @@
                 $(".btnApply").text(data.Discount);
             }
             if (data.Hotline) {
-                $("#Hotline").append("咨询热线：<a href='tel:" + data.Hotline + "'>&nbsp;<label style='color:green;font-size:22px;'>" + data.Hotline + "</label></a>");
+                $("#Hotline").append("咨询热线：<br/><a href='tel:" + data.Hotline + "'>&nbsp;<label style='color:green;font-size:20px;'>" + data.Hotline + "</label></a>");
                 $("#btnTel").attr("href", "tel:" + data.Hotline);
                 $(".itemTel").text(data.Hotline);
             }
