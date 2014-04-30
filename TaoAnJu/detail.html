@@ -50,74 +50,226 @@
     </header>
     <hr class="fullLine" />
 
-
-
     <!--内容-->
     <article>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
+        <div class="row masthead-bg">
+            <div class="container">
+                <div class="col-lg-12 hidden">
                     <a class="topAdLine txtAdLine" href="javascript:void(0)" onclick="openWin('#boxUpBM');">本服务由<span class="itemName"></span>开发商全程提供：&nbsp;&nbsp;</a>
                 </div>
-                <div class="col-lg-12">
-                    <div id="headshow">
-                        <!--图片尺寸：715*480-->
-                        <div id="ItemPic" class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                            <div class="slider">
-                                <ul id="pics" class="slides"></ul>
-                            </div>
+                <div id="headshow" class="col-lg-12">
+                    <!--图片尺寸：715*480-->
+                    <div id="ItemPic" class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                        <div class="slider">
+                            <ul id="pics" class="slides"></ul>
                         </div>
-                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                            <!--项目名称-->
-                            <div id="title" class="itemName">
-                            </div>
-                            <!--标签-->
-                            <div id="label">
-                                <div class="label label-warning">推荐</div>
-                                <div class="label label-primary">接送</div>
-                                <div class="label label-danger">折扣</div>
-                            </div>
-                            <!--在线沟通-->
-                            <div id="titleDes" class="alert alert-warning">
-                                <div class="col-lg-7">
-                                    <p style="text-indent:0em;">在线沟通：<a target="_blank" href="http://sighttp.qq.com/authd?IDKEY=a562c6ec966f9a559faa77aab28f2d37e6c78d48987de6d7"><img border="0" src="http://wpa.qq.com/imgd?IDKEY=a562c6ec966f9a559faa77aab28f2d37e6c78d48987de6d7&pic=51" alt="在线沟通" title="在线沟通"></a></p><p>
-                                        <div id="Hotline"></div>
-                                    </p>
-                                </div>
-                                <div id="ReferencePrice" class="col-lg-5">
-                                </div>
-                            </div>
-                            <!--报名-->
-                            <form id="baoming" role="form">
-                                <input id="itemId" type="hidden" name="itemId" value="" />
-                                <div class="form-group">
-                                    <label for="username">姓名</label>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <!--项目名称-->
+                        <div id="title" class="itemName">
+                        </div>
+                        <!--标签-->
+                        <div id="label" style="text-align:right;">
+                            <div class="label label-warning">推荐</div>
+                            <div class="label label-primary">接送</div>
+                            <div class="label label-danger">折扣</div>
+                        </div>
+                        <!--在线沟通-->
+                        <table class="table table-hover">
+                            <tr>
+                                <th>在线沟通</th>
+                                <td><a target="_blank" href="http://sighttp.qq.com/authd?IDKEY=a562c6ec966f9a559faa77aab28f2d37e6c78d48987de6d7"><img border="0" src="http://wpa.qq.com/imgd?IDKEY=a562c6ec966f9a559faa77aab28f2d37e6c78d48987de6d7&pic=51" alt="在线沟通" title="在线沟通"></a></td>
+                            </tr>
+                            <tr>
+                                <th>贵宾专线</th>
+                                <td id="Hotline"></td>
+                            </tr>
+                            <tr>
+                                <th>当前均价</th>
+                                <td id="ReferencePrice" style="font-size:18px;"></td>
+                            </tr>
+                        </table>
+                        <!--报名-->
+                        <div class="list-group">
+                            <a href="javascript:void(0)" class="list-group-item" style="font-size: 18px; font-weight: bold; color: #000;">
+                                在线报名
+                            </a>
+                            <a href="#" class="list-group-item">
+                                <br />
+                                <div class="input-group">
+                                    <span class="input-group-addon">姓名</span>
                                     <input type="text" class="form-control" required id="username" placeholder="怎么称呼您">
                                 </div>
-                                <div class="form-group">
-                                    <label for="usertel">手机</label>
+                                <br />
+                                <div class="input-group">
+                                    <span class="input-group-addon">电话</span>
                                     <input type="text" class="form-control" required id="usertel" placeholder="您的手机号">
                                 </div>
-                                <div style="margin-top:10px;">
-                                    <button type="button" class="btnApply btn btn-lg btn-success btn-block" data-loading-text="正在提交...">申请</button>
-                                </div>
-                            </form>
+                                <br />
+                            </a>
+                            <button type="button" class=" list-group-item btnApply btn btn-lg btn-success btn-block" data-loading-text="正在提交...">申请</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row visible-lg visible-md">
+        </div>
+        <!--<div class="row visible-lg visible-md">
+            <div class="container">
                 <div class="col-lg-12">
-                    <img src="Content/images/flow.jpg" style="width:100%;" />
+                    <img src="Content/images/flow2.jpg" style="width:100%;" />
                 </div>
             </div>
-            <hr />
-            <div class="row">
+        </div>-->
+        <div class="row visible-lg visible-md" id="steps">
+            <div class="container">
+                <div class="col-lg-2"><div class="title"><b>免费看房</b><span class="glyphicon glyphicon-bullhorn"></span></div></div>
+                <div class="col-lg-2 step">1、在线报名→</div>
+                <div class="col-lg-2 step">2、客服回访→</div>
+                <div class="col-lg-2 step">3、短信确认→</div>
+                <div class="col-lg-2 step">4、参与看房→</div>
+                <div class="col-lg-2 step">5、豪礼相送</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container">
                 <!--表格详细信息-->
-                <div id="tableinfo" class="col-lg-8">
+                <div class="col-lg-8">
+                    <ul class="nav nav-tabs" id="myTab">
+                        <li class="active"><a href="#home" data-toggle="tab">特性</a></li>
+                        <li><a href="#tableinfo" data-toggle="tab">详细信息</a></li>
+                    </ul>
+
+                    <div id="tableinfo" class="tab-pane">
+
+                    </div>
+
+                    <!--<div class="tab-content">
+                        <div class="tab-pane active" id="home">
+                            <div id="items" class="row">
+
+                                <div class="col-sm-6 col-md-4 ">
+                                    <div class="thumbnail">
+                                        <a href="javascript:void(0)" title="微赢通官网微信">
+                                            <img class="lazy" src="Content/images/s1.jpg" width="300" height="150" />
+                                        </a>
+                                        <div class="caption">
+                                            <h3>
+                                                <a href="javascript:tobaoming();" title="跨平台导航">
+                                                    简装现房，即买即住<br />
+                                                    <small>在线免费排号</small>
+                                                </a>
+                                            </h3>
+                                            <p>
+                                                门窗安装完毕，四白落地，易检测房屋质量，可进行个性化装修，易租易售。高层板楼主体结构好，外墙37公分，主体框架由钢筋混凝土组成，结实牢固，抗震系数高
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 col-md-4 ">
+                                    <div class="thumbnail">
+                                        <a href="javascript:void(0)" title="微房通">
+                                            <img class="lazy" src="Content/images/s1.jpg" width="300" height="150">
+                                        </a>
+                                        <div class="caption">
+                                            <h3>
+                                                <a href="javascript:tobaoming();" title="自定义WAP网站底部导航">
+                                                    2014年3月16日盛大开盘<br>
+                                                    <small>在线免费排号</small>
+                                                </a>
+                                            </h3>
+                                            <p>
+                                                香河华宇房地产综合开发有限公司，香河最具实力的开发商，70%--80%项目都均该公司开发建设。首发抢号，好户型就是你的
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 col-md-4 ">
+                                    <div class="thumbnail">
+                                        <a href="javascript:void(0)" title="阳光·尚城">
+                                            <img class="lazy" src="Content/images/s1.jpg" width="300" height="150">
+                                        </a>
+                                        <div class="caption">
+                                            <h3>
+                                                <a href="javascript:tobaoming();" title="阳光·尚城">
+                                                    北京938路直达楼盘<br>
+                                                    <small>在线免费排号</small>
+                                                </a>
+                                            </h3>
+                                            <p>
+                                                京沈高速香河第二出口，北京938路公交香河家具城西口站步行3分钟即可到达本项目
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 col-md-4 ">
+                                    <div class="thumbnail">
+                                        <a href="javascript:void(0)" title="阳光·尚城">
+                                            <img class="lazy" src="Content/images/s1.jpg" width="300" height="150">
+                                        </a>
+                                        <div class="caption">
+                                            <h3>
+                                                <a href="javascript:tobaoming();" title="阳光·尚城">
+                                                    超低首付，仅需5万起<br>
+                                                    <small>在线免费排号</small>
+                                                </a>
+                                            </h3>
+                                            <p>
+                                                80至100平米，小户型首付低。均价5500/m²，助您告别北漂
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 col-md-4 ">
+                                    <div class="thumbnail">
+                                        <a href="javascript:void(0)" title="阳光·尚城">
+                                            <img class="lazy" src="Content/images/s1.jpg" width="300" height="150">
+                                        </a>
+                                        <div class="caption">
+                                            <h3>
+                                                <a href="javascript:tobaoming();" title="阳光·尚城">
+                                                    香河新一中旁边<br>
+                                                    <small>在线免费排号</small>
+                                                </a>
+                                            </h3>
+                                            <p>
+                                                紧邻香河新一中、县直幼儿园，周边配套完善，距离医院、银行、超市、县城中心距离都非常适中，是您的不二选择
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 col-md-4 ">
+                                    <div class="thumbnail">
+                                        <a href="javascript:void(0)" title="阳光·尚城">
+                                            <img class="lazy" src="Content/images/s1.jpg" width="300" height="150">
+                                        </a>
+                                        <div class="caption">
+                                            <h3>
+                                                <a href="javascript:tobaoming();" title="阳光·尚城">
+                                                    投资、自助皆划算<br>
+                                                    <small>在线免费排号</small>
+                                                </a>
+                                            </h3>
+                                            <p>
+                                                对比北京周边其他区域，通州均价20000元，燕郊13000元，廊坊8000元，大厂6000元，固安10000元。现在的香河房产均价6000元，而我们的阳光尚城，首发仅需均价5500/m²，可观的升值空间值得您拥有
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div id="tableinfo" class="tab-pane">
+
+                        </div>
+                    </div>-->
                 </div>
                 <div class="col-lg-4">
-                    <div class="row">
+                    <div class="row hidden">
                         <a href="Content/images/weixinEQ.jpg" data-lightbox="weixinEQ" data-title="淘安居官方微信二维码，扫一扫关注就有惊喜，红包火热派发中！您还可以直接添加微信号：taoanjufc"><img src="Content/images/weixinEQ.jpg" class="col-lg-12" style="width:100%;margin-bottom:20px;" /></a>
                     </div>
                     <div class="row">
@@ -134,7 +286,7 @@
             </div>
         </div>
     </article>
-    <div class="clear"></div>
+
     <!--底部-->
     <footer>
         <div class="container">
@@ -210,11 +362,12 @@
     <!--弹窗报名看房-->
     <div id="boxUpBM" class="centerWin">
         <a class="btnClose" href="javascript:closeWin();">关闭</a>
-        <hr style="visibility:hidden"/>
+        <hr style="visibility:hidden" />
         <h4 class="adtitle">【本服务由<span class="itemName"></span>开发商全程提供】</h4>
         <h3 class="txtAdLine"></h3>
         <br />
         <form id="bmForm" class="input-group">
+            <input id="itemId" type="hidden" />
             <div class="input-group">
                 <span class="input-group-addon">姓名</span>
                 <input type="text" id="username2" name="username" class="form-control" placeholder="怎么称呼您" />
@@ -244,7 +397,7 @@
     <script charset="utf-8" src="http://map.qq.com/api/js?v=2.exp&key=U4VBZ-JNCWS-3UAOT-6L63F-IPEMO-V4BYN"></script>
     <script src="Content/glide/jquery.glide.min.js"></script>
     <script src="Content/Scripts/common.min.js?v=5"></script>
-    <script src="Content/Scripts/detail.min.js?v=5"></script>
+    <script src="Content/Scripts/detail.min.js?v=6"></script>
 
     <!--百度-->
     <script type="text/javascript"> var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F74ed888839e807c94fe642a2a1ceb6f6' type='text/javascript'%3E%3C/script%3E")) </script>

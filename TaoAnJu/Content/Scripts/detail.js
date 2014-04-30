@@ -2,10 +2,10 @@
     //var opt = { title: "小淘提示", content: "现在立即关注淘安居官方微信（taoanjufc），即可领取看房现金红包，还可微信在线预约排号，更多实用功能等你来发现！" };
     //$('#btnBuyHelp').popover(opt);
 
-    if (getBType()) {
+    if (getBType() == "pc") {
         openWin("#boxUpBM");
     }
-    
+
     var id = GetQueryString("id");
     $("#itemId").val(id);
     $.ajax({
@@ -38,12 +38,12 @@
                 $(".btnApply").text(data.Discount);
             }
             if (data.Hotline) {
-                $("#Hotline").append("咨询热线：<br/><a href='tel:" + data.Hotline + "'>&nbsp;<label style='color:green;font-size:20px;'>" + data.Hotline + "</label></a>");
+                $("#Hotline").append("<a href='tel:" + data.Hotline + "'>&nbsp;<label style='font-size:20px;'>" + data.Hotline + "</label></a>");
                 $("#btnTel").attr("href", "tel:" + data.Hotline);
                 $(".itemTel").text(data.Hotline);
             }
             if (data.ReferencePrice) {
-                $("#ReferencePrice").html("<label style='font-size:18px;'>当前均价</label><label style='color:red;'>" + data.ReferencePrice+"</label>");
+                $("#ReferencePrice").html("<label>" + data.ReferencePrice + "</label>");
             }
             if (data.vedio) {
                 var str = "";

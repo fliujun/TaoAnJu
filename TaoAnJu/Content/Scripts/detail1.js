@@ -6,11 +6,11 @@ function showCenter(type) {
 
     switch (type) {
         case 'about':
-            $("#boxUpContent").html('<h2>关于华宇经典</h2><hr/><div  style="text-align:left;"><p><strong>北京指尖美景传媒广告有限公司代理，全力推荐！</strong></p><p>华宇经典紧邻香河县主干道——新华大街，与毗邻的城市东西轴线——新开街构成香河县的十字交叉黄金枢纽、交通四通八达，瞬间通达城市东西南北。滚滚人流，车流汇集于此，通过京哈高速、京唐高铁（在建中）、密涿高速（在建中），更是辐射北京东部500万高端商务人流。</p></div>');
+            $("#boxUpContent").html('<h2>关于华宇经典</h2><hr/><div  style="text-align:left;"><p><strong>淘安居房地产经纪（北京）有限公司代理，全力推荐！</strong></p><p>华宇经典紧邻香河县主干道——新华大街，与毗邻的城市东西轴线——新开街构成香河县的十字交叉黄金枢纽、交通四通八达，瞬间通达城市东西南北。滚滚人流，车流汇集于此，通过京哈高速、京唐高铁（在建中）、密涿高速（在建中），更是辐射北京东部500万高端商务人流。</p></div>');
             openWin("#boxShow");
             break;
         case 'contact':
-            $("#boxUpContent").html('<h2>联系我们</h2><hr/><div style="text-align:left;"><h4>公司地址：北京朝阳通惠河北路31号泰珍嘉大厦5、6层</h4><h4>官方热线：<a href="tel:400-627-6577" style="color:white;">400-627-6577</a></h4>推荐直接在线报名，豪礼赠不停！华宇经典，环北京最超值楼盘！</h4></div>');
+            $("#boxUpContent").html('<h2>联系我们</h2><hr/><div style="text-align:left;"><h4>公司地址：北京朝阳通惠河北路31号泰珍嘉大厦5、6层</h4><h4>官方热线：<a href="tel:400-660-1178" style="color:white;">400-660-1178</a></h4>推荐直接在线报名，豪礼赠不停！华宇经典，环北京最超值楼盘！</h4></div>');
             openWin("#boxShow");
             break;
     }

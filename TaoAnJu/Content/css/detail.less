@@ -3,7 +3,7 @@
 
 @themeLight: #7d0044; //亮红色
 @lineGray: #b0afb0; //灰色线条
-@hoverYellow: #f08200; //黄色
+@hoverYellow: #9c0055; //黄色
 @deepGray: #333237; //深灰
 @searchHeight: 35px;
 @searchTop: 120px;
@@ -47,14 +47,15 @@ header {
 #titleDes {
     margin-top: 10px;
     font-size: 14px;
-    font-family:Microsoft Yahei;
+    font-family: Microsoft Yahei;
     font-weight: bold;
-    overflow:auto;
+    overflow: auto;
 
     a {
-        color:#8a6d3b;
+        color: #8a6d3b;
+
         &:hover {
-            text-decoration:none;
+            text-decoration: none;
         }
     }
 }
@@ -69,11 +70,11 @@ header {
 
 article {
     #headshow {
-        background: #f5f5f5;
-        border: 1px solid #eee;
+        /*background: #f5f5f5;*/
+        /*border: 1px solid #eee;*/
         /*box-shadow: 1px 1px 3px #808080;*/
         overflow: auto;
-        padding: 10px;
+        margin-top: 0;
     }
 
     #title {
@@ -89,8 +90,8 @@ article {
         margin: 30px 0;
 
         img {
-            margin-bottom:10px;
-            width:100%;
+            margin-bottom: 10px;
+            width: 100%;
         }
     }
 
@@ -121,23 +122,24 @@ article {
 
     #baoming {
         margin-top: 20px;
-        background: @hoverYellow;
-        padding: 30px;
-        box-shadow: 1px 1px 5px #808080;
+        /*background: @hoverYellow;*/
+        /*padding: 30px;*/
+        /*box-shadow: 1px 1px 5px #808080;*/
         overflow: hidden;
 
         input {
-            border: 0;
+            /*border: 0;*/
         }
 
         label {
-            color: white;
+            color: #000;
+            font-weight: bold;
         }
 
         #btnApply {
             font-family: 'Microsoft Yahei';
-            font-weight: bold;
-            margin-top: 30px;
+            /*font-weight: bold;
+            margin-top: 30px;*/
         }
     }
 
@@ -187,6 +189,66 @@ article {
     height: 450px;
 }
 
-#bmForm{
-    margin:0 auto;
+#bmForm {
+    margin: 0 auto;
+}
+
+.masthead-bg {
+    /*text-shadow: 0 1px 3px rgba(0,0,0,0.4),0 0 30px rgba(0,0,0,0.075);*/
+    background-repeat: repeat-x;
+    /*background-image: -webkit-linear-gradient(45deg, #0b2c15, #8dc34c);
+    background-image: -moz-linear-gradient(45deg, #0b2c15, #8dc34c);
+    background-image: linear-gradient(45deg, #0b2c15, #8dc34c);*/
+    /*background:#eee;*/
+}
+
+    .masthead-bg:after {
+        content: '';
+        display: block;
+        background: url(/Content/images/wenli.png) repeat center center;
+    }
+
+.tab-content {
+    margin: 20px 0;
+}
+
+.thumbnail {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 310px;
+    height: 500px;
+    overflow-y: hidden;
+    color: #555;
+}
+
+    .thumbnail a:focus {
+        text-decoration: none;
+    }
+
+    .thumbnail img {
+        max-width: 100%;
+        height: auto;
+    }
+
+#steps {
+    margin: 20px auto;
+    font-size:14px;
+    font-weight:bold;
+
+    .title {
+        background:@themeLight;
+        color:white;
+        text-align:center;
+        padding:5px 0;
+    }
+
+    b {
+        font-size: 18px;
+    }
+
+    .step {
+        border-bottom: 2px solid @themeLight;
+    }
 }
