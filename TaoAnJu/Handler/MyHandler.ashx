@@ -535,6 +535,7 @@ public class MyHandler : IHttpHandler
         int id = this.getInt("id");
         string username = this.getString("username");
         string usertel = this.getString("usertel");
+        string type = this.getString("type");
         //using (DsConnectionDB db = new DsConnectionDB(RiSystem.DBConnNormal))
         //{
         //    SqlTransaction trans = db.BeginTransaction();
@@ -569,7 +570,9 @@ public class MyHandler : IHttpHandler
             r.dt_CreateDate = DateTime.Now;
             r.vc_Mobile = usertel;
             r.vc_Name = username;
+            r.vc_From = type;
             ro.Insert(r);
+           
             //同时判断客户表里此客户是否存在
             sql = "select count(*) from tb_Customer where vc_Mobile='" + usertel + "'";
             if ((int)db.ExecuteScalar(sql) == 0)
@@ -580,6 +583,7 @@ public class MyHandler : IHttpHandler
                 c.dt_CreateDate = DateTime.Now;
                 c.vc_Mobile = usertel;
                 c.vc_Name = username;
+                c.vc_From = type;
                 //自动分配给服务客户数量最少的销售代表，没有销售代表则分配给管理员
                 sql = "select top 1 int_UserId from tb_UserInfo order by int_UserType desc,int_CCount asc";
                 DataTable dt = db.ExecuteQuery(sql).Tables[0];

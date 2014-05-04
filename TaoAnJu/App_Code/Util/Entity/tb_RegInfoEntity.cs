@@ -14,6 +14,7 @@ namespace TaoAnJu.Util
         private bool _dt_CreateDateNull = true;
         private Int32 _int_UserId = 0;
         private bool _int_UserIdNull = true;
+        private string _vc_From;
 
         public tb_RegInfoEntity() { }
         /// <summary>
@@ -123,6 +124,11 @@ namespace TaoAnJu.Util
             set { _int_UserIdNull = value; }
         }
 
+        public string vc_From
+        {
+            get { return _vc_From; }
+            set { _vc_From = value; }
+        }
     }//类定义结束
 }//命名空间结束
 

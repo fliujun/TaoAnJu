@@ -24,6 +24,7 @@ namespace TaoAnJu.Util
         private DateTime _dt_CreateDate;
         private bool _dt_CreateDateNull = true;
         private string _vc_Static;
+        private string _vc_From;
 
         public tb_CustomerEntity() { }
         /// <summary>
@@ -229,6 +230,12 @@ namespace TaoAnJu.Util
         {
             get { return _vc_Static; }
             set { _vc_Static = value; }
+        }
+
+        public string vc_From
+        {
+            get { return _vc_From; }
+            set { _vc_From = value; }
         }
 
     }//类定义结束

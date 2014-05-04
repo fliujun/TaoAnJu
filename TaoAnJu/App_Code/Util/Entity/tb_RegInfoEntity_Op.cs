@@ -91,6 +91,8 @@ namespace TaoAnJu.Util
                 sqlStr += "dt_CreateDate,";
             if (!value.int_UserIdNull)
                 sqlStr += "int_UserId,";
+            if (!string.IsNullOrEmpty(value.vc_From))
+                sqlStr += "vc_From,";
             sqlStr = sqlStr.Substring(0, sqlStr.Length - 1);
             sqlStr += ")  VALUES (";
             if (!value.int_ItemIdNull)
@@ -103,6 +105,8 @@ namespace TaoAnJu.Util
                 sqlStr += "@dt_CreateDate,";
             if (!value.int_UserIdNull)
                 sqlStr += "@int_UserId,";
+            if (!string.IsNullOrEmpty(value.vc_From))
+                sqlStr += "@vc_From,";
             sqlStr = sqlStr.Substring(0, sqlStr.Length - 1);
             sqlStr += ");SELECT @@IDENTITY";
             SqlCommand cmd = _db.CreateCommand(sqlStr);
@@ -116,7 +120,10 @@ namespace TaoAnJu.Util
                 AddParameter(cmd, "dt_CreateDate", (object)value.dt_CreateDate);
             if (!value.int_UserIdNull)
                 AddParameter(cmd, "int_UserId", (object)value.int_UserId);
-
+            if (!string.IsNullOrEmpty(value.vc_From))
+            {
+                AddParameter(cmd, "vc_From", (object)value.vc_From);
+            }
             value.int_RId = Convert.ToInt32(cmd.ExecuteScalar());
 
         }
@@ -368,7 +375,9 @@ namespace TaoAnJu.Util
                 case "int_UserId":
                     parameter = _db.AddParameter(cmd, paramName, SqlDbType.Int, value);
                     break;
-
+                case "vc_From":
+                     parameter = _db.AddParameter(cmd, paramName, SqlDbType.NVarChar, value);
+                    break;
 
                 default:
                     throw new ArgumentException("Unknown parameter name (" + paramName + ").");

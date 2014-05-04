@@ -130,14 +130,14 @@ function baoming(id, username, usertel) {
     $.ajax({
         url: "handler/MyHandler.ashx",
         type: "POST",
-        data: { method: "baoming", id: id, username: username, usertel: usertel },
+        data: { method: "baoming", id: id, username: username, usertel: usertel, type: $("#type").val() },
         beforeSend: function () {
             $btnApply.button("loading");
         },
         success: function (result) {
             var data = $.parseJSON(result);
             if (data.success) {
-                showAlert("恭喜您申请成功，关注微信（taoanjufc）即可获得一对一免费买房服务，还可查询更多信息、参与抽奖、领取看房现金红包！");
+                showAlert("恭喜您报名成功，我们将有客服专线电话联系您，请留意我们的来电。");
             } else {
                 showAlert(data.error, true);
             }

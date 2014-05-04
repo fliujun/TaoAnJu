@@ -133,6 +133,10 @@
                          <HeaderStyle HorizontalAlign="center" VerticalAlign="Middle" Width="80px" Wrap="False" />
                          <ItemStyle HorizontalAlign="center" VerticalAlign="Middle" />
                      </asp:BoundField>
+                    <asp:BoundField DataField="vc_From" HeaderText="报名来源">
+                         <HeaderStyle HorizontalAlign="center" VerticalAlign="Middle" Width="80px" Wrap="False" />
+                         <ItemStyle HorizontalAlign="center" VerticalAlign="Middle" />
+                     </asp:BoundField>
                 </Columns>
                 <HeaderStyle Height="22px" BackColor="#E6F4FF" />
             </asp:GridView>

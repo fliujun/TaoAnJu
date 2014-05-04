@@ -107,6 +107,8 @@ namespace TaoAnJu.Util
                 sqlStr += "dt_CreateDate,";
             if (null != value.vc_Static)
                 sqlStr += "vc_Static,";
+            if (!string.IsNullOrEmpty(value.vc_From))
+                sqlStr += "vc_From,";
             sqlStr = sqlStr.Substring(0, sqlStr.Length - 1);
             sqlStr += ")  VALUES (";
             if (null != value.vc_Name)
@@ -135,6 +137,8 @@ namespace TaoAnJu.Util
                 sqlStr += "@dt_CreateDate,";
             if (null != value.vc_Static)
                 sqlStr += "@vc_Static,";
+            if (!string.IsNullOrEmpty(value.vc_From))
+                sqlStr += "@vc_From,";
             sqlStr = sqlStr.Substring(0, sqlStr.Length - 1);
             sqlStr += ");SELECT @@IDENTITY";
             SqlCommand cmd = _db.CreateCommand(sqlStr);
@@ -164,7 +168,8 @@ namespace TaoAnJu.Util
                 AddParameter(cmd, "dt_CreateDate", (object)value.dt_CreateDate);
             if (null != value.vc_Static)
                 AddParameter(cmd, "vc_Static", value.vc_Static);
-
+            if (!string.IsNullOrEmpty(value.vc_From))
+                AddParameter(cmd, "vc_From", value.vc_From);
             value.int_CId = Convert.ToInt32(cmd.ExecuteScalar());
 
         }
@@ -542,7 +547,9 @@ namespace TaoAnJu.Util
                 case "vc_Static":
                     parameter = _db.AddParameter(cmd, paramName, SqlDbType.NVarChar, value);
                     break;
-
+                case "vc_From":
+                    parameter = _db.AddParameter(cmd, paramName, SqlDbType.NVarChar, value);
+                    break;
 
                 default:
                     throw new ArgumentException("Unknown parameter name (" + paramName + ").");
